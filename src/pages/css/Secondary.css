@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: "Hind Siliguri", serif;
+}
+.popular-doctors{
+    color: blue;
+}
+
+.doctor-info img{
+   height: 90px;
+   width: 90px;
+   border-radius: 10px ;
+   border: 1px solid #000;
+}
+.doctor-name h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.doctor-name p{
+    font-size: 10px;   
+}
