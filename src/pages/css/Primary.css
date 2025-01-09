@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
 .intro-video{
     border: 2px solid red;
+}
+.recommended-doctors{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-all{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.recommended-hospitals{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
