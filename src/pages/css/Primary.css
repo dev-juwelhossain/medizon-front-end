@@ -11,3 +11,14 @@
     justify-content: space-between;
     align-items: center;
 }
+.view-all{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.recommended-hospitals{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
