@@ -13,7 +13,8 @@
     "flowbite": "^2.5.2",
     "flowbite-react": "^0.10.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router": "^7.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
