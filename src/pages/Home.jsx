@@ -1,5 +1,6 @@
 import "./css/Primary.css";
 
+
 const Home = () => {
   return (
     <div className="m-2 mb-[70px]">
@@ -47,7 +48,7 @@ const Home = () => {
                 <img src="../img/doctor.jpg" alt="" />
 
                 <div>
-                  <p>অভিজ্ঞতা: ১৫+ বছর</p>
+                  <p className="mt-2 ">অভিজ্ঞতা: ১৫+ বছর</p>
                 </div>
               </div>
 
@@ -57,29 +58,36 @@ const Home = () => {
                 <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
                   <p>হাড়ের অস্ত্রোপচার</p>
                 </div>
-                <p className="text-[15px]">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
+                <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
                 <div className="mt-3 text-[12px]">
-                  <a
-                    href=""
-                    className="flex items-center rounded-sm px-1 bg-green-500 text-white  hover:bg-green-600 w-[50%] hover:text-white "
-                  >
-                    বিস্তারিত
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="#ffffff"
-                    >
-                      <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
-                    </svg>
-                  </a>
+                <a
+                href="#"
+                className="inline-flex items-center float-end mt-5 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+              >
+                বিস্তারিত
+                <svg
+                  className="rtl:rotate-180 w-2 h-2 ms-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* recommended hospitals */}
 
       <div className="recommended-hospitals">
@@ -99,9 +107,12 @@ const Home = () => {
           </svg>
         </div>
       </div>
+
       {/* Recommended hospitals cards carousel*/}
+
       <section className="flex items-center justify-center object-contain">
         <div className="m-2">
+
           {/* here is profile card 1 */}
 
           <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
@@ -145,6 +156,7 @@ const Home = () => {
           </div>
         </div>
         <div className="m-2">
+
           {/* here is  profile card 2*/}
 
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -188,7 +200,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       {/* recommended ambulance */}
+
       <div className="recommended-ambulance">
         <h2 className="mt-2 mb-2 text-[13px]">Recommended Ambulance</h2>
         <div className="flex items-center justify-between m-2 mt-3">
@@ -208,9 +222,12 @@ const Home = () => {
       </div>
 
       {/* Recommended ambulance cards carousel*/}
+
       <section className="flex items-center justify-center object-contain">
         <div className="m-2">
+
           {/* here is ambulance profile card 1 */}
+
 
           <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
