@@ -110,7 +110,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/neurologist (1).png"
+              src="../../public/img/urology.png"
               alt=""
             />
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">ইউরোলজিস্ট</p>
@@ -120,7 +120,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/neurologist (1).png"
+              src="../../public/img/physician.png"
               alt=""
             />
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">কার্ডিওলজিস্ট</p>
@@ -130,7 +130,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/neurologist (1).png"
+              src="../../public/img/gastroenterology.png"
               alt=""
             />
             <p className="text-[11px] mt-1 hover:text-green-600 text-center">গ্যাস্ট্রোরোলজিস্ট</p>
@@ -140,7 +140,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/neurologist (1).png"
+              src="../../public/img/urology.png"
               alt=""
             />
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">ফিজিওথেরাপি</p>
