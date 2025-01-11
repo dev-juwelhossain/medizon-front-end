@@ -77,13 +77,13 @@ const Home = () => {
               </a>
               <div className="px-2 py-3">
                 <a href="#">
-                <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
-              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
+                <h2 className="text-[15px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
               <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center px-3 py-2 font-medium text-center text-white bg-green-500 rounded-lg text-[15] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
+                  className="inline-flex items-center px-2 py-1 font-normal text-center text-white bg-green-500 rounded-lg text-[10] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
                 >
                   বিস্তারিত
                   <svg
@@ -119,7 +119,7 @@ const Home = () => {
               <div className="px-2 py-3">
               <a href="#">
                 <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
-              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
+              <p className="text-[13px] m-1 "> +৮৮০-১৩XXXXXXXX </p>
               <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
                 </a>
                 <a
@@ -181,9 +181,9 @@ const Home = () => {
               </a>
               <div className="px-2 py-3">
                 <a href="#">
-                <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
-              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
-              <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
+                <h2 className="text-[15px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-[10px] m-1 ">০১৩XXXXXXXX </p>
+              <p className="text-[10px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
                 </a>
                 <a
                   href="#"
