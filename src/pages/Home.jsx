@@ -2,7 +2,7 @@ import "./css/Primary.css";
 
 const Home = () => {
   return (
-    <div className="m-2 mb-[270px]">
+    <div className="m-2 mb-[70px]">
       {/* ################### Start code here ##########################*/}
 
       {/* Intro Video Here */}
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </div>
       {/* Recommended doctors cards carousel*/}
-      <section className="flex items-center justify-between ">
+      <section className="flex items-center justify-center ">
         <div className="m-2 h-[180px] w-[275px] rounded-2xl shadow-xl">
           {/* here is profile card */}
         </div>
@@ -63,31 +63,31 @@ const Home = () => {
           </div>
         </div>
         {/* Recommended hospitals cards carousel*/}
-        <section className="flex items-center justify-between ">
-          <div className="m-2 h-[180px] rounded-2xl shadow-xl">
-            {/* here is profile card */}
+        <section className="flex items-center justify-center object-contain">
+          <div className="m-2">
+            {/* here is profile card 1 */}
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <img
-                  className="rounded-t-lg"
-                  src="../../public/img/hospital.jpg"
+                  className="items-center object-cover object-center h-[150px] w-auto"
+                  src="../../img/hospital.jpg"
                   alt=""
                 />
               </a>
-              <div className="p-5">
+              <div className="px-2 py-3">
                 <a href="#">
-                <h2 className="text-lg font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
-              <p className="text-[15px]">ফোন নাম্বার - ০১৩XXXXXXXX </p>
-              <p className="text-[15px]">ঠিকানা - ধাপ রোড , মেডিকেল মোড়</p>
+                <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
+              <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="inline-flex items-center px-3 py-2 font-medium text-center text-white bg-green-500 rounded-lg text-[15] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
                 >
-                  Read more
+                  বিস্তারিত
                   <svg
-                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-1"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -104,33 +104,151 @@ const Home = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="m-2">
+            {/* here is profile card 2*/}
 
-            {/* <div className="p-2">
-              <img
-                src="../../public/img/hospital.jpg"
-                alt="Hospital Image"
-                className="rounded-t-2xl"
-              />
-              <h2 className="text-lg font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
-              <p className="text-[15px]">ফোন নাম্বার - ০১৩XXXXXXXX </p>
-              <p className="text-[15px]">ঠিকানা - ধাপ রোড , মেডিকেল মোড়</p>
-              <button
-                type="button"
-                className="px-4 py-2 mt-2 text-white bg-green-500 rounded-lg "
-              >
-                <a href="">বিস্তারিত</a>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
+            <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                <img
+                  className="items-center object-cover object-center h-[150px] w-auto" 
+                  src="../../img/hospital.jpg"
+                  alt=""
+                />
+              </a>
+              <div className="px-2 py-3">
+              <a href="#">
+                <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
+              <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
+                </a>
+                <a
+                  href="#"
+                 className="inline-flex items-center px-3 py-2 font-medium text-center text-white bg-green-500 rounded-lg flexitems-center hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800 tex-[15px]"
                 >
-                  <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
-                </svg>
-              </button>
-            </div> */}
+                  বিস্তারিত
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* recommended ambulance */}
+        <div className="recommended-ambulance">
+        <h2 className="mt-2 mb-2">Recommended Ambulance</h2>
+        <div className="flex items-center justify-between m-2 mt-3">
+          <h2 className="mx-2 ">View All</h2>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#ffffff"
+            className="float-right bg-green-500 rounded-full"
+          >
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+          </svg>
+        </div>
+      </div>
+      
+      {/* Recommended ambulance cards carousel*/}
+      <section className="flex items-center justify-center object-contain">
+          <div className="m-2">
+            {/* here is profile card 1 */}
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                <img
+                  className="items-center object-cover object-center h-[150px] w-auto"
+                  src="../../img/hospital.jpg"
+                  alt=""
+                />
+              </a>
+              <div className="px-2 py-3">
+                <a href="#">
+                <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
+              <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center px-3 py-2 font-medium text-center text-white bg-green-500 rounded-lg text-[15] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
+                >
+                  বিস্তারিত
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="m-2">
+            {/* here is profile card 2*/}
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                <img
+                  className="items-center object-cover object-center h-[150px] w-auto" 
+                  src="../../img/hospital.jpg"
+                  alt=""
+                />
+              </a>
+              <div className="px-2 py-3">
+              <a href="#">
+                <h2 className="text-[18px] font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-[13px] m-1 "> <span className="font-bold">ফোন নাম্বার -</span> ০১৩XXXXXXXX </p>
+              <p className="text-[13px] m-1"><span className="font-bold">ঠিকানা -</span> ধাপ রোড , মেডিকেল মোড়</p>
+                </a>
+                <a
+                  href="#"
+                 className="inline-flex items-center px-3 py-2 font-medium text-center text-white bg-green-500 rounded-lg flexitems-center hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800 tex-[15px]"
+                >
+                  বিস্তারিত
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
     </div>
