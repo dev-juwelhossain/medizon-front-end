@@ -39,8 +39,45 @@ const Home = () => {
       </div>
       {/* Recommended doctors cards carousel*/}
       <section className="flex items-center justify-center ">
-        <div className="m-2 h-[180px] w-[275px] rounded-2xl shadow-xl">
+        <div className="">
           {/* here is profile card */}
+          <div className="doctor-profile">
+            <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
+              <div className="doctor-info">
+                <img src="../img/doctor.jpg" alt="" />
+
+                <div>
+                  <p>অভিজ্ঞতা: ১৫+ বছর</p>
+                </div>
+              </div>
+
+              <div className="doctor-name">
+                <h2>ডাঃ মােঃ আব্দুল মােমেন</h2>
+                <p>এমবিবিএস, এমএস (অর্থোপেডিক সার্জারি)</p>
+                <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                  <p>হাড়ের অস্ত্রোপচার</p>
+                </div>
+                <p className="text-[15px]">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
+                <div className="mt-3 text-[12px]">
+                  <a
+                    href=""
+                    className="flex items-center rounded-sm px-1 bg-green-500 text-white  hover:bg-green-600 w-[50%] hover:text-white "
+                  >
+                    বিস্তারিত
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#ffffff"
+                    >
+                      <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* recommended hospitals */}
@@ -191,7 +228,7 @@ const Home = () => {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-gray-300 rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
               >
                 যোগাযোগ করুন
                 <svg
@@ -228,15 +265,13 @@ const Home = () => {
             </a>
             <div className="px-2 py-2">
               <a href="#">
-                <h2 className="text-[14px] font-bold">
-                 মায়ের দোয়া এম্বুলেন্স
-                </h2>
+                <h2 className="text-[14px] font-bold">মায়ের দোয়া এম্বুলেন্স</h2>
                 <p className="text-[13px] m-1 ">০১৩২৩৫৪০৬১</p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
               </a>
               <a
                 href="#"
-                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-gray-400 rounded-md text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
               >
                 যোগাযোগ করুন
                 <svg
