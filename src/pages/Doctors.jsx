@@ -42,9 +42,13 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+
+
+      {/* Favourite Doctors */}
       <div className="popular-doctors">
-        <h2>জনপ্রিয় ডাক্তাররা</h2>
+        <h2>প্রিয় ডাক্তাররা</h2>
       </div>
+      {/* Doctor Card */}
       <div className="doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
@@ -70,14 +74,19 @@ const Doctors = () => {
                   height="24px"
                   viewBox="0 -960 960 960"
                   width="24px"
-                  fill="#ffffff"
-                                  >
+                  fill="#ffffff" >
                   <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
                 </svg>
               </a>
             </div>
           </div>
         </div>
+      </div>
+
+
+      {/* Department of Doctors */}
+      <div className="popular-doctors">
+        <h2 className="mt-6">বিভাগ অনুযায়ী ডাক্তার খুঁজুন</h2>
       </div>
     </div>
   );
