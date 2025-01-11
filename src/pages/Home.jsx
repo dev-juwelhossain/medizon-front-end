@@ -18,7 +18,7 @@ const Home = () => {
           allowfullscreen
         ></iframe>
       </div>
-      
+
       {/* Recommended doctors  */}
       <div className="recommended-doctors">
         <h2 className="mt-2 ">Recommended Doctors</h2>
@@ -40,50 +40,46 @@ const Home = () => {
       {/* Recommended doctors cards carousel*/}
       <section className="flex items-center justify-between ">
         <div className="m-5 h-[180px] w-[275px] rounded-2xl shadow-xl">
-          
           {/* here is profile card */}
-          
         </div>
-       
       </section>
-
-      
       {/* recommended hospitals */}
-      
-       <section>
-       <div className="recommended-hospitals">
-        <h2 className="mt-2 ">Recommended Hospitals</h2>
-        <div className="flex items-center justify-between m-2 mt-3">
-          <h2 className="mx-2 ">View All</h2>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#ffffff"
-            className="float-right text-green-500 bg-green-500 rounded-full"
-          >
-            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-          </svg>
-        </div>
-      </div>
-      {/* Recommended hospitals cards carousel*/}
-      <section className="flex items-center justify-between ">
-        <div className="m-5 h-[180px] w-[275px] rounded-2xl shadow-xl">
-          
-          {/* here is profile card */}
-          <div>
-            
+      <section>
+        <div className="recommended-hospitals">
+          <h2 className="mt-2 ">Recommended Hospitals</h2>
+          <div className="flex items-center justify-between m-2 mt-3 -2">
+            <h2 className="mx-2">View All</h2>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#ffffff"
+              className="float-right text-green-500 bg-green-500 rounded-full"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
           </div>
-          
         </div>
-       
+        {/* Recommended hospitals cards carousel*/}
+        <section className="flex items-center justify-between ">
+          <div className="m-5 h-[180px] w-[275px] rounded-2xl shadow-xl">
+            {/* here is profile card */}
+            
+            <div>
+              <img
+                src=".../public/img/hospital.jpg"
+                alt="Hospital Image"
+                className="rounded-t-2xl" />
+              <h2 className="text-lg font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
+              <p className="text-sm ">ঠিকানা</p>
+              <p className="text-sm">যোগাযোগচভফ ২</p>
+            </div>
+          </div>
+        </section>
       </section>
-        
-       </section>
-      
-      
     </div>
   );
 };
