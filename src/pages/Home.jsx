@@ -67,15 +67,32 @@ const Home = () => {
         <section className="flex items-center justify-between ">
           <div className="m-5 h-[180px] w-[275px] rounded-2xl shadow-xl">
             {/* here is profile card */}
-            
-            <div>
+
+            <div className="p-2">
               <img
                 src=".../public/img/hospital.jpg"
                 alt="Hospital Image"
-                className="rounded-t-2xl" />
+                className="rounded-t-2xl"
+              />
               <h2 className="text-lg font-bold">রংপুর মেডিকেল কলেজ হাসপাতাল</h2>
-              <p className="text-sm ">ঠিকানা</p>
-              <p className="text-sm">যোগাযোগচভফ ২</p>
+              <p className="text-[15px]">ফোন নাম্বার - ০১৩XXXXXXXX </p>
+              <p className="text-[15px]">ঠিকানা - ধাপ রোড , মেডিকেল মোড়</p>
+              <button
+                type="button"
+                className="px-4 py-2 mt-2 text-white bg-green-500 rounded-lg "
+              >
+                <a href="">বিস্তারিত</a>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                >
+                  <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                </svg>
+              </button>
             </div>
           </div>
         </section>
