@@ -214,8 +214,59 @@ const Doctors = () => {
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">ডার্মাটোলজি</p>
           </a>
         </div>
-
-        
+      </section>
+      {/* Department Three */}
+      <section className=" flex items-center justify-between">
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src=""
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">মেডিসিন</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="../../public/img/pediatrics.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">শিশু বিভাগ</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="../../public/img/orthopedics.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অর্থোপেডিক্স</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/psychiatry.png"
+              alt=""
+            />
+            <p className="text-[11px] mt-1 hover:text-green-600 text-center">মনোরোগবিদ্যা</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/dermatology.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">ডার্মাটোলজি</p>
+          </a>
+        </div>
       </section>
     </div>
   );
