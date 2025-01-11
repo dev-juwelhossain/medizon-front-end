@@ -178,7 +178,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/pediatrics.png"
+              src="img/pediatrics.png"
               alt=""
             />
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">শিশু বিভাগ</p>
@@ -188,7 +188,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/orthopedics.png"
+              src="img/orthopedics.png"
               alt=""
             />
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">অর্থোপেডিক্স</p>
