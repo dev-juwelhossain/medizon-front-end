@@ -8,7 +8,7 @@ const DoctorsDetails = () => {
 
       {/* ##### Doctors List###### */}
 
-      <div className="doctor-profile mb-2">
+      <div className="mb-2 doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
@@ -53,7 +53,7 @@ const DoctorsDetails = () => {
         </div>
       </div>
 
-      <div className="doctor-profile mb-2">
+      <div className="mb-2 doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
@@ -64,9 +64,9 @@ const DoctorsDetails = () => {
           </div>
 
           <div className="doctor-name">
-            <h2>প্রফেসর ডাঃ অমরেশ চন্দ্র সাহা</h2>
-            <p>এমবিবিএস, এফসিপিএস (মেডিসিন), এফএসিপি (ইউএসএ)</p>
-            <p className="font-bold">মেডিসিন বিশেষজ্ঞ, রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
+            <h2>প্রফেসর ডাঃ দেবেন্দ্র নাথ সরকার</h2>
+            <p>এমবিবিএস, এমসিপিএস, এমডি, এফসিসিপি, এফআরএসএম, এফএসিপি, এফআরসিপি</p>
+            <p className="font-bold">বিভাগীয় প্রধান, রংপুর মেডিকেল কলেজ</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
               <p>মেডিসিন (Medicine)</p>
             </div>
@@ -98,20 +98,20 @@ const DoctorsDetails = () => {
         </div>
       </div>
 
-      <div className="doctor-profile mb-2">
+      <div className="mb-2 doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
 
             <div>
-              <p className="mt-2 text-center ">অভিজ্ঞতা: ১২+ বছর</p>
+              <p className="mt-2 text-center ">অভিজ্ঞতা: ১৫+ বছর</p>
             </div>
           </div>
 
           <div className="doctor-name">
-            <h2>প্রফেসর ডাঃ শাহ মোঃ সরওয়ার জাহান</h2>
-            <p>এমবিবিএস, এফসিপিএস (মেডিসিন)</p>
-            <p className="font-bold">মেডিসিন বিশেষজ্ঞ, রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
+            <h2>প্রফেসর ডাঃ দেবেন্দ্র নাথ সরকার</h2>
+            <p>এমবিবিএস, এমসিপিএস, এমডি, এফসিসিপি, এফআরএসএম, এফএসিপি, এফআরসিপি</p>
+            <p className="font-bold">বিভাগীয় প্রধান, রংপুর মেডিকেল কলেজ</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
               <p>মেডিসিন (Medicine)</p>
             </div>
@@ -143,22 +143,22 @@ const DoctorsDetails = () => {
         </div>
       </div>
 
-      <div className="doctor-profile mb-2">
+      <div className="mb-2 doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
 
             <div>
-              <p className="mt-2 text-center ">অভিজ্ঞতা: ১২+ বছর</p>
+              <p className="mt-2 text-center ">অভিজ্ঞতা: ১৫+ বছর</p>
             </div>
           </div>
 
           <div className="doctor-name">
-            <h2>ডাঃ মোঃ আব্দুল বাসেত</h2>
-            <p>এমবিবিএস, বিসিএস (স্বাস্থ্য), এমডি (ইন্টারনাল মেডিসিন)</p>
-            <p className="font-bold">মেডিসিন বিশেষজ্ঞ, রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
+            <h2>প্রফেসর ডাঃ দেবেন্দ্র নাথ সরকার</h2>
+            <p>এমবিবিএস, এমসিপিএস, এমডি, এফসিসিপি, এফআরএসএম, এফএসিপি, এফআরসিপি</p>
+            <p className="font-bold">বিভাগীয় প্রধান, রংপুর মেডিকেল কলেজ</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-              <p>ইন্টারনাল মেডিসিন</p>
+              <p>মেডিসিন (Medicine)</p>
             </div>
             <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             <div className="mt-3 text-[12px]">
@@ -188,24 +188,24 @@ const DoctorsDetails = () => {
         </div>
       </div>
 
-      <div className="doctor-profile mb-2">
+      <div className="mb-2 doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
 
             <div>
-              <p className="mt-2 text-center ">অভিজ্ঞতা: ১২+ বছর</p>
+              <p className="mt-2 text-center ">অভিজ্ঞতা: ১৫+ বছর</p>
             </div>
           </div>
 
           <div className="doctor-name">
-            <h2>প্রফেসর ডাঃ এ.কে.এম. হানিফ চৌধুরী</h2>
-            <p>এমবিবিএস, এফসিপিএস</p>
-            <p className="font-bold">পাইলস, ফিস্টুলা, এবং হেপাটোবিলিয়ারি সার্জারি, রংপুর কমিউনিটি মেডিকেল কলেজ</p>
+            <h2>প্রফেসর ডাঃ দেবেন্দ্র নাথ সরকার</h2>
+            <p>এমবিবিএস, এমসিপিএস, এমডি, এফসিসিপি, এফআরএসএম, এফএসিপি, এফআরসিপি</p>
+            <p className="font-bold">বিভাগীয় প্রধান, রংপুর মেডিকেল কলেজ</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-              <p>সার্জারি</p>
+              <p>মেডিসিন (Medicine)</p>
             </div>
-            <p className="text-[15px] mt-1">রংপুর কমিউনিটি মেডিকেল কলেজ</p>
+            <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             <div className="mt-3 text-[12px]">
               <a
                 href="#"
@@ -233,24 +233,24 @@ const DoctorsDetails = () => {
         </div>
       </div>
 
-      <div className="doctor-profile mb-2">
+      <div className="mb-2 doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
 
             <div>
-              <p className="mt-2 text-center ">অভিজ্ঞতা: ১২+ বছর</p>
+              <p className="mt-2 text-center ">অভিজ্ঞতা: ১৫+ বছর</p>
             </div>
           </div>
 
           <div className="doctor-name">
-            <h2>ডাঃ মোস্ত. উম্মে হাবিবা বেগম</h2>
-            <p>এমবিবিএস, ডি.জি.ও</p>
-            <p className="font-bold">প্রসূতি, সিজারিয়ান ডেলিভারি, এবং জরায়ু সম্পর্কিত জটিলতা</p>
+            <h2>প্রফেসর ডাঃ দেবেন্দ্র নাথ সরকার</h2>
+            <p>এমবিবিএস, এমসিপিএস, এমডি, এফসিসিপি, এফআরএসএম, এফএসিপি, এফআরসিপি</p>
+            <p className="font-bold">বিভাগীয় প্রধান, রংপুর মেডিকেল কলেজ</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-              <p>গাইনোকোলজি</p>
+              <p>মেডিসিন (Medicine)</p>
             </div>
-            <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ হাসপাতাল</p>
+            <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             <div className="mt-3 text-[12px]">
               <a
                 href="#"
