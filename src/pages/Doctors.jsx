@@ -115,7 +115,7 @@ const Doctors = () => {
               src="img/neurologist (1).png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600">নিউরোলজি</p>
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">নিউরোলজি</p>
           </a>
         </div>
         <div>
@@ -152,7 +152,7 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="img/urology.png"
+              src="img/physiotherapist.png"
               alt=""
             />
             <p className="text-[12px] mt-1 hover:text-green-600 text-center">ফিজিওথেরাপি</p>
@@ -221,50 +221,105 @@ const Doctors = () => {
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src=""
+              src="img/maternity.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">মেডিসিন</p>
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">গাইনোকোলজি</p>
           </a>
         </div>
         <div>
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/pediatrics.png"
+              src="img/red-eye.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">শিশু বিভাগ</p>
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অফথালমোলজি</p>
           </a>
         </div>
         <div>
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="../../public/img/orthopedics.png"
+              src="img/cancer.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অর্থোপেডিক্স</p>
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অনকোলজি</p>
           </a>
         </div>
         <div>
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="img/psychiatry.png"
+              src="img/endocrine.png"
               alt=""
             />
-            <p className="text-[11px] mt-1 hover:text-green-600 text-center">মনোরোগবিদ্যা</p>
+            <p className="text-[11px] mt-1 hover:text-green-600 text-center">এন্ডোক্রাইনোলজি</p>
           </a>
         </div>
         <div>
           <a href="#">
             <img
               className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
-              src="img/dermatology.png"
+              src="img/nephrology.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">ডার্মাটোলজি</p>
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">নেফ্রোলজি</p>
+          </a>
+        </div>
+      </section>
+
+      {/* Department Four Number Row */}
+
+      <section className=" flex items-center justify-between">
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/maternity.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">গাইনোকোলজি</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/red-eye.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অফথালমোলজি</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/cancer.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অনকোলজি</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/endocrine.png"
+              alt=""
+            />
+            <p className="text-[11px] mt-1 hover:text-green-600 text-center">এন্ডোক্রাইনোলজি</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              src="img/nephrology.png"
+              alt=""
+            />
+            <p className="text-[12px] mt-1 hover:text-green-600 text-center">নেফ্রোলজি</p>
           </a>
         </div>
       </section>
