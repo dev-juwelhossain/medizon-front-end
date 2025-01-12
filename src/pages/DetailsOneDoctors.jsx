@@ -1,10 +1,10 @@
 const DetailsOneDoctors = () => {
   return (
-    <div className="flex m-2  mb-2 ">
+    <div className="flex m-2 mb-2 ">
 
         {/* BAck Button */}
 
-      <div className="flex space-x-2 m-2">
+      <div className="flex m-2 space-x-2">
          <a href="#">
          <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const DetailsOneDoctors = () => {
 
         {/*####Share & Favourite Icon ####*/}
 
-        <div className="flex ml-auto space-x-2 m-2">
+        <div className="flex m-2 ml-auto space-x-2">
         <a href="#">
             {/* Favourite Icon */}
 

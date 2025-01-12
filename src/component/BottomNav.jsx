@@ -12,7 +12,7 @@ const BottomNav = () => {
             className="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group"
           >
             <svg
-              className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 hover:text-green-500 "
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -50,7 +50,7 @@ const BottomNav = () => {
           <div
             id="tooltip-wallet"
             role="tooltip"
-            className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 hover:text-green-500"
           >
             <div className="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -59,7 +59,7 @@ const BottomNav = () => {
               to="/doctors"
               data-tooltip-target="tooltip-new"
               type="button"
-              className="flex items-center justify-center w-10 h-10 font-normal bg-white bg--600 hover:bg-blue-700 group focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
+              className="flex items-center justify-center w-10 h-10 font-normal bg-white bg--600 group-hover:text-green-500 group focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const BottomNav = () => {
             className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
           >
             <svg
-              className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+              className="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-green-500 dark:group-hover:text-blue-500"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
