@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./css/Secondary.css";
 
 const Doctors = () => {
@@ -32,7 +33,7 @@ const Doctors = () => {
               >
                 বিস্তারিত
                 <svg
-                  className="rtl:rotate-180 w-2 h-2 ms-1"
+                  className="w-2 h-2 rtl:rotate-180 ms-1"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -57,7 +58,7 @@ const Doctors = () => {
         <h2>প্রিয় ডাক্তাররা</h2>
       </div>
       {/* Doctor Card */}
-      <div className="doctor-profile">
+      <Link to='/doctor-details' className="doctor-profile">
             <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
               <div className="doctor-info">
                 <img src="../img/doctor.jpg" alt="" />
@@ -81,7 +82,7 @@ const Doctors = () => {
               >
                 বিস্তারিত
                 <svg
-                  className="rtl:rotate-180 w-2 h-2 ms-1"
+                  className="w-2 h-2 rtl:rotate-180 ms-1"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -99,7 +100,7 @@ const Doctors = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
       {/* Department of Doctors */}
       <div className="popular-doctors">
@@ -107,7 +108,7 @@ const Doctors = () => {
       </div>
 
       {/* Department List */}
-      <section className=" flex items-center justify-between">
+      <section className="flex items-center justify-between ">
         <div>
           <a href="#">
             <img
@@ -163,7 +164,7 @@ const Doctors = () => {
         
       </section>
       {/* 2nd Department of Doctor */}
-      <section className=" flex items-center justify-between">
+      <section className="flex items-center justify-between ">
         <div>
           <a href="#">
             <img
@@ -216,7 +217,7 @@ const Doctors = () => {
         </div>
       </section>
       {/* Department Three */}
-      <section className=" flex items-center justify-between">
+      <section className="flex items-center justify-between ">
         <div>
           <a href="#">
             <img
@@ -271,7 +272,7 @@ const Doctors = () => {
 
       {/* Department Four Number Row */}
 
-      <section className=" flex items-center justify-between">
+      <section className="flex items-center justify-between ">
         <div>
           <a href="#">
             <img
