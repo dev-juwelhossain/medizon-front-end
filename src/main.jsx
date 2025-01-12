@@ -11,6 +11,7 @@ import Layout from './Layout/Layout.jsx'
 import Home from "./pages/Home.jsx";
 import Doctors from "./pages/Doctors.jsx";
 import Hospitals from "./component/Hospitals.jsx";
+import DoctorsDetails from "./pages/DoctorsDetails.jsx";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/hospitals",
         element: <Hospitals />,
+      },
+      {
+        path: "/doctor-details",
+        element: <DoctorsDetails />,
       },
     ],
   },
