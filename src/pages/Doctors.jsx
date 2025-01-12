@@ -115,7 +115,7 @@ const Doctors = () => {
               src="img/neurologist (1).png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">নিউরোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">নিউরোলজি</p>
           </a>
         </div>
         <div>
@@ -125,7 +125,7 @@ const Doctors = () => {
               src="img/urology.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">ইউরোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">ইউরোলজি</p>
           </a>
         </div>
         <div>
@@ -135,7 +135,7 @@ const Doctors = () => {
               src="img/physician.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">কার্ডিওলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">কার্ডিওলজি</p>
           </a>
         </div>
         <div>
@@ -145,7 +145,7 @@ const Doctors = () => {
               src="img/gastroenterology.png"
               alt=""
             />
-            <p className="text-[11px] mt-1 hover:text-green-600 text-center">গ্যাস্ট্রোরোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">গ্যাস্ট্রোরোলজি</p>
           </a>
         </div>
         <div>
@@ -155,7 +155,7 @@ const Doctors = () => {
               src="img/physiotherapist.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">ফিজিওথেরাপি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">ফিজিওথেরাপি</p>
           </a>
         </div>
         
@@ -171,7 +171,7 @@ const Doctors = () => {
               src="img/medicine.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">মেডিসিন</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">মেডিসিন</p>
           </a>
         </div>
         <div>
@@ -181,7 +181,7 @@ const Doctors = () => {
               src="img/pediatrics.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">শিশু বিভাগ</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">শিশু বিভাগ</p>
           </a>
         </div>
         <div>
@@ -191,7 +191,7 @@ const Doctors = () => {
               src="img/orthopedics.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অর্থোপেডিক্স</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">অর্থোপেডিক্স</p>
           </a>
         </div>
         <div>
@@ -201,7 +201,7 @@ const Doctors = () => {
               src="img/psychiatry.png"
               alt=""
             />
-            <p className="text-[11px] mt-1 hover:text-green-600 text-center">মনোরোগবিদ্যা</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">সাইকিয়াট্রিস্ট</p>
           </a>
         </div>
         <div>
@@ -211,7 +211,7 @@ const Doctors = () => {
               src="img/dermatology.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">ডার্মাটোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">ডার্মাটোলজি</p>
           </a>
         </div>
       </section>
@@ -224,7 +224,7 @@ const Doctors = () => {
               src="img/maternity.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">গাইনোকোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">গাইনোকোলজি</p>
           </a>
         </div>
         <div>
@@ -234,7 +234,7 @@ const Doctors = () => {
               src="img/red-eye.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অফথালমোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">অফথালমোলজি</p>
           </a>
         </div>
         <div>
@@ -244,7 +244,7 @@ const Doctors = () => {
               src="img/cancer.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অনকোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">অনকোলজি</p>
           </a>
         </div>
         <div>
@@ -254,7 +254,7 @@ const Doctors = () => {
               src="img/endocrine.png"
               alt=""
             />
-            <p className="text-[11px] mt-1 hover:text-green-600 text-center">এন্ডোক্রাইনোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">এন্ডোক্রাইনোলজি</p>
           </a>
         </div>
         <div>
@@ -264,14 +264,14 @@ const Doctors = () => {
               src="img/nephrology.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">নেফ্রোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">নেফ্রোলজি</p>
           </a>
         </div>
       </section>
 
       {/* Department Four Number Row */}
 
-      <section className=" flex items-center justify-between">
+      <section className=" flex items-center justify-between mb-20">
         <div>
           <a href="#">
             <img
@@ -279,7 +279,7 @@ const Doctors = () => {
               src="img/maternity.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">গাইনোকোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">ডায়াবেটোলজি</p>
           </a>
         </div>
         <div>
@@ -289,7 +289,7 @@ const Doctors = () => {
               src="img/red-eye.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অফথালমোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">অফথালমোলজি</p>
           </a>
         </div>
         <div>
@@ -299,7 +299,7 @@ const Doctors = () => {
               src="img/cancer.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">অনকোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">অনকোলজি</p>
           </a>
         </div>
         <div>
@@ -309,7 +309,7 @@ const Doctors = () => {
               src="img/endocrine.png"
               alt=""
             />
-            <p className="text-[11px] mt-1 hover:text-green-600 text-center">এন্ডোক্রাইনোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">ডেন্টিস্ট</p>
           </a>
         </div>
         <div>
@@ -319,7 +319,7 @@ const Doctors = () => {
               src="img/nephrology.png"
               alt=""
             />
-            <p className="text-[12px] mt-1 hover:text-green-600 text-center">নেফ্রোলজি</p>
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">হোমিওপ্যাথি</p>
           </a>
         </div>
       </section>
