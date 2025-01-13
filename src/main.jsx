@@ -15,7 +15,6 @@ import DoctorsDetails from "./pages/DoctorsDetails.jsx";
 import DetailsOneDoctors from "./pages/DetailsOneDoctors.jsx";
 import Ambulance from "./pages/Ambulance.jsx";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
