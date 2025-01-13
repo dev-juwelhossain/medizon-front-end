@@ -3,7 +3,7 @@ import "./css/Secondary.css";
 
 const Doctors = () => {
   return (
-    <div className="m-3  max-w-md mx-auto">
+    <div className="max-w-md m-2 mx-auto mb-2 ml-2 mr-2">
       {/* Start code here */}
       {/* Recommended Doctors List */}
       <div className="popular-doctors">
@@ -299,7 +299,7 @@ const Doctors = () => {
 
       {/* Department Four Number Row */}
 
-      <section className=" flex items-center justify-between mb-20">
+      <section className="flex items-center justify-between mb-20 ">
         <div>
           <a href="#">
             <img
