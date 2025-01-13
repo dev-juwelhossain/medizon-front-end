@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Home = () => {
   return (
-    <div className="m-2 mb-[70px]">
+    <div className="m-2 mb-[70px] max-w-md mx-auto">
       {/* ################### Start code here ##########################*/}
 
       {/* Intro Video Here */}
