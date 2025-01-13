@@ -1,6 +1,6 @@
 const Hospitals = () => {
   return (
-    <div className="m-2 ">
+    <div className="m-2  max-w-md mx-auto">
       {/* Hospitals list*/}
       {/* rangpur medical collage */}
       <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">

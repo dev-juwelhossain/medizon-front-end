@@ -15,7 +15,7 @@ const DoctorSlider = () => {
     
 
   return (
-    <div className="slider-container">
+    <div className="slider-container rounded-sm bg-white">
       <Slider {...settings}>
         <div>
           <SingleSlide />
