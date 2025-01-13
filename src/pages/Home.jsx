@@ -30,7 +30,7 @@ const Home = () => {
             viewBox="0 -960 960 960"
             width="20px"
             fill="#0e9f6e"
-            className="float-right rounded-full"
+            className="float-right"
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>
@@ -38,7 +38,7 @@ const Home = () => {
       </NavLink>
       {/* Recommended doctors cards carousel*/}
 
-      <div className=" bg-white">
+      <div className="bg-white ">
         <DoctorSlider />
       </div>
 
@@ -47,17 +47,17 @@ const Home = () => {
       {/* recommended hospitals */}
 
       <div className="recommended-hospitals">
-        <h2 className="mt-2 text-[13px]">Recommended Hospitals</h2>
+        <h2 className="mt-2 text-[15px]">সুপারিশকৃত হাসপাতাল সমুহ </h2>
         <div className="flex items-center justify-between m-2 mt-3 -2">
-          <h2 className="mx-2 text-[13px]">View All</h2>
+          <h2 className="mx-2 text-[14px]">আরো দেখুন</h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="20px"
+            height="22px"
             viewBox="0 -960 960 960"
-            width="20px"
-            fill="#ffffff"
-            className="float-right text-green-500 bg-green-500 rounded-full"
+            width="22px"
+            fill="#0e9f6e"
+            className="float-right "
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>
@@ -158,17 +158,17 @@ const Home = () => {
       {/* recommended ambulance */}
 
       <div className="recommended-ambulance">
-        <h2 className="mt-2 mb-2 text-[13px]">Recommended Ambulance</h2>
+        <h2 className="mt-2 mb-2 text-[15px]">সুপারিশকৃত অ্যাম্বুলেন্স সমুহ</h2>
         <div className="flex items-center justify-between m-2 mt-3">
-          <h2 className="mx-2 text-[13px]">View All</h2>
+          <h2 className="mx-2 text-[14px]">আরো দেখুন </h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="20px"
+            height="22px"
             viewBox="0 -960 960 960"
-            width="20px"
-            fill="#ffffff"
-            className="float-right bg-green-500 rounded-full"
+            width="22px"
+            fill="#0e9f6e"
+            className="float-right "
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>

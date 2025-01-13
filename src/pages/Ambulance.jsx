@@ -26,7 +26,7 @@ const Ambulance = () => {
       </div>
       {/* BP ambulance service */}
       
-      <div className="mb-4 mr-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="mb-4 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -47,7 +47,7 @@ const Ambulance = () => {
       </div>
       {/* LABAID Diagnostic Rangpur */}
        
-      <div className="mb-4 mr-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="mb-4 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -71,7 +71,7 @@ const Ambulance = () => {
 
       {/* Update Ambulance Service */}
       
-      <div className="mb-4 mr-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="mb-4 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -93,7 +93,7 @@ const Ambulance = () => {
       
       {/* desh clinic ambulance service */}
 
-      <div className="mb-20 mr-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="mb-20 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
