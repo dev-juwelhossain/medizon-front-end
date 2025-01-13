@@ -87,11 +87,13 @@ const DetailsOneDoctors = () => {
       </div>
 
       {/* Doctor's Information */}
-      <div className="mt-20 ">
+      <div className="mt-10 ">
         <h4 className="px-3 mx-3 ml-3 font-semibold text-center text-green-500 bg-gray-100 rounded-sm">
           তথ্য ও অভিজ্ঞতা{" "}
         </h4>
       </div>
+
+      {/*  */}
     </div>
   );
 };
