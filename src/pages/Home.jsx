@@ -1,4 +1,4 @@
-import { Carousel } from "flowbite-react";
+
 import DoctorSlider from "../component/DoctorSlider";
 import "./css/Primary.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
