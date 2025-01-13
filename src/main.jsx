@@ -13,6 +13,7 @@ import Doctors from "./pages/Doctors.jsx";
 import Hospitals from "./component/Hospitals.jsx";
 import DoctorsDetails from "./pages/DoctorsDetails.jsx";
 import DetailsOneDoctors from "./pages/DetailsOneDoctors.jsx";
+import Ambulance from "./pages/Ambulance.jsx";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/details-one-doctors",
         element: <DetailsOneDoctors />,
+      },
+      {
+        path: "/ambulance",
+        element: <Ambulance />,
       },
     ],
   },

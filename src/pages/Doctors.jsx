@@ -1,9 +1,9 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./css/Secondary.css";
 
 const Doctors = () => {
   return (
-    <div className="m-3">
+    <div className="m-3  max-w-md mx-auto">
       {/* Start code here */}
       {/* Recommended Doctors List */}
       <div className="popular-doctors">
@@ -19,7 +19,7 @@ const Doctors = () => {
             </div>
           </div>
 
-          <div className="doctor-name">
+          <NavLink to='/details-one-doctors' className="doctor-name">
             <h2>ডাঃ মােঃ আব্দুল মােমেন</h2>
             <p>এমবিবিএস, এমএস (অর্থোপেডিক সার্জারি)</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
@@ -49,7 +49,7 @@ const Doctors = () => {
                 </svg>
               </a>
             </div>
-          </div>
+          </NavLink>
         </div>
       </div>
 

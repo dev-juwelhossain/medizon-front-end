@@ -1,6 +1,6 @@
 const DetailsOneDoctors = () => {
   return (
-    <div className="flex m-2 mb-2 ">
+    <div className="flex m-2 mb-2  max-w-md mx-auto">
 
         {/* BAck Button */}
 

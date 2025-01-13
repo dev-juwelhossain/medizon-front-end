@@ -1,6 +1,6 @@
 const Hospitals = () => {
   return (
-    <div className="m-2 ">
+    <div className="max-w-md m-2 mx-auto">
       {/* Hospitals list*/}
       {/* rangpur medical collage */}
       <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
@@ -294,7 +294,7 @@ const Hospitals = () => {
       </div>
       
       {/* marium eye hospital */}
-      
+       
       <div className=" mt-4 mb-20 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
