@@ -1,4 +1,5 @@
 
+import { NavLink } from "react-router";
 import DoctorSlider from "../component/DoctorSlider";
 import "./css/Primary.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -12,35 +13,29 @@ const Home = () => {
       {/* Intro Video Here */}
       <div className="intro-video @media screen and (max-width: 800px)">
         <iframe
+          style={{ borderRadius: '6px' }}
           width="100%"
-          height="200px"
-          src="https://www.youtube.com/embed/eHJnEHyyN1Y"
-          title="6 Tips on Being a Successful Entrepreneur | John Mullins | TED"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+          height="200px" src="https://www.youtube.com/embed/E7Bpg77s5_o" title="ঘরে বসেই স্বাস্থ্যসেবা | Sebaghar | Telemedicine | MBBS Doctor | Ekhon TV" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
       {/* Recommended doctors  */}
-      <div className="recommended-doctors">
-        <h2 className="mt-2 text-[13px]">Recommended Doctors</h2>
+      <NavLink to='/doctor-details' className="recommended-doctors">
+        <h3 className="mt-2 text-[13px]">বিশেষজ্ঞ ডাক্তার সমূহ</h3>
         <div className="flex items-center justify-between m-2 mt-3">
-          <h2 className="mx-2 text-[13px] ">View All</h2>
+          <h2 className="mx-2 text-[13px] ">আরো দেখুন</h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="20px"
             viewBox="0 -960 960 960"
             width="20px"
-            fill="#ffffff"
-            className="float-right bg-green-500 rounded-full"
+            fill="#0e9f6e"
+            className="float-right rounded-full"
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>
         </div>
-      </div>
+      </NavLink>
       {/* Recommended doctors cards carousel*/}
 
       <DoctorSlider />

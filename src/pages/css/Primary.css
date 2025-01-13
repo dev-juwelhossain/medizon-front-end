@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
  body{
-        font-family: 'Hind Siliguri','Montserrat', sans-serif;
+        font-family: 'Hind Siliguri', sans-serif;
         font-weight: 400;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     .recommended-doctors{
-        font-family: 'Montserrat', sans-serif;
+        
         font-weight: 500;
         display: flex;
         justify-content: space-between;
@@ -17,11 +17,11 @@
         margin-left: 8px;
     }
     .view-all{
-        font-family: 'Montserrat', sans-serif;
+       
         font-weight: 500;
     }
     .recommended-hospitals{
-            font-family: 'Montserrat', sans-serif;
+            
             font-weight: 500;
             display: flex;
             justify-content: space-between;
@@ -29,7 +29,7 @@
             margin-left: 8px;
     }
     .recommended-ambulance{
-        font-family: 'Montserrat', sans-serif;
+       
         font-weight: 500;
         display: flex;
         justify-content: space-between;
