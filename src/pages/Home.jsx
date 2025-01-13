@@ -181,7 +181,7 @@ const Home = () => {
         <div className="m-2">
           {/* here is ambulance profile card 1 */}
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[140px] w-auto"
