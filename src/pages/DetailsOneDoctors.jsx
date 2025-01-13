@@ -6,17 +6,13 @@ const DetailsOneDoctors = () => {
 
       <div className="flex m-2 space-x-2">
          <a href="#">
-         <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#5f6368"
-          >
-            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
-          </svg>
-          ডাক্তারের তথ্য 
+         <svg className="w-6 h-6 text-green-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
+</svg>
+
+          
           </a>
+          <h2 className="text-green-500 font-semibold">ডাক্তারের তথ্য </h2>
       </div>
 
         {/*####Share & Favourite Icon ####*/}
