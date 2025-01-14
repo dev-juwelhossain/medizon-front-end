@@ -155,7 +155,7 @@ const DetailsOneDoctors = () => {
         <h3 className="ml-3 mb-2 font-semibold text-[20px]">যোগাযোগ করুন</h3>
         <div className="flex items-center mb-2 ml-3 space-x-1">
           <svg
-            className="w-[24px] h-[24px] text-gray-800 dark:text-white text-black border border-black rounded-xl"
+            className="w-[24px] h-[24px] text-gray-800 dark:text-white  border border-black rounded-xl"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
