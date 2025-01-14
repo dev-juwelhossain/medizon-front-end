@@ -74,7 +74,7 @@ const Home = () => {
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[150px] w-auto"
-                src="../../img/hospital.jpg"
+                src="../../img/rangpurmedi.jpg"
                 alt=""
               />
             </a>
@@ -117,16 +117,16 @@ const Home = () => {
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[150px] w-auto"
-                src="../../img/hospital.jpg"
+                src="../../img/labaid.jpg"
                 alt=""
               />
             </a>
             <div className="px-2 py-3">
               <a href="#">
                 <h2 className="text-[14px] font-bold">
-                  রংপুর মেডিকেল কলেজ হাসপাতাল
+                ল্যাব এইড ডায়াগনস্টিক সেন্টার
                 </h2>
-                <p className="text-[13px] m-1 "> +৮৮০-১৩XXXXXXXX </p>
+                <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫ </p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
               </a>
               <a
@@ -185,15 +185,15 @@ const Home = () => {
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[140px] w-auto"
-                src="../../img/ambulance.jpg"
+                src="../../img/bipi.jpg"
                 alt=""
               />
             </a>
             <div className="px-2 py-2">
               <a href="#">
-                <h2 className="text-[14px] font-bold">মায়ের দোয়া এম্বুলেন্স</h2>
-                <p className="text-[12px] m-1 ">০১৩XXXXXXXX </p>
-                <p className="text-[12px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
+                <h2 className="text-[14px] font-bold">আপডেট আম্বুলেন্স সার্ভিস</h2>
+                <p className="text-[12px] m-1 ">+৮৮০-১৯৭১-৫৫৫৫৫৫ </p>
+                <p className="text-[12px] m-1">দিনাজপুর হাইওয়ে, রংপুর</p>
               </a>
               <a
                 href="#"
@@ -228,13 +228,13 @@ const Home = () => {
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[140px] w-auto"
-                src="../../img/ambulance.jpg"
+                src="../../img/bipi.jpg"
                 alt=""
               />
             </a>
             <div className="px-2 py-2">
               <a href="#">
-                <h2 className="text-[14px] font-bold">মায়ের দোয়া এম্বুলেন্স</h2>
+                <h2 className="text-[14px] font-bold">বিপি অ্যাম্বুলেন্স সার্ভিস</h2>
                 <p className="text-[13px] m-1 ">০১৩২৩৫৪০৬১</p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
               </a>
