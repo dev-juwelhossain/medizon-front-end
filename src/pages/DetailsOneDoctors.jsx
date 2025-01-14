@@ -195,9 +195,9 @@ const DetailsOneDoctors = () => {
         </div>
         <br />
         <div>
-          <h2 className="ml-2 text-[20px] font-bold ">ডাক্তার সম্পর্কে :</h2>
-          <br />
-          <p className="p-2 ml-1 mr-1 text-white rounded-lg shadow-lg bg-slate-900 text-start ">
+          <h2 className="ml-2 mb-1 text-[20px] font-bold ">ডাক্তার সম্পর্কে :</h2>
+          
+          <p className="p-2 ml-1 mr-1 border border-gray-400 rounded-lg shadow-lg text-start">
             ডা. লাইক আহমেদ খান একজন অভিজ্ঞ মেডিসিন বিশেষজ্ঞ, যিনি ২০ বছরেরও বেশি
             সময় ধরে রোগীদের চিকিৎসা দিয়ে আসছেন। তিনি এমবিবিএস এবং এফসিপিএস
             (মেডিসিন) ডিগ্রিধারী এবং বর্তমানে রংপুর মেডিকেল কলেজ হাসপাতালে
