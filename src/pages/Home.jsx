@@ -22,7 +22,7 @@ const Home = () => {
       <NavLink to='/doctor-details' className="recommended-doctors">
         <h3 className="mt-2 text-[15px]">বিশেষজ্ঞ ডাক্তার সমূহ</h3>
         <div className="flex items-center justify-between m-2 mt-3">
-          <h2 className="mx-2 text-[13px] ">আরো দেখুন</h2>
+          <h2 className="mx-1 text-[13px] ">আরো দেখুন</h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"

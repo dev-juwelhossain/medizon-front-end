@@ -4,7 +4,7 @@ const Hospitals = () => {
   return (
     <div className="max-w-md m-2 mx-auto">
       {/* back button start here */}
-       <div className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
+       <NavLink to='/' className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
           <svg
             className="w-5 h-5 text-green-500 mt-[2px] dark:text-white"
@@ -26,7 +26,7 @@ const Hospitals = () => {
           
         </a>
         <h3 className="mb-4">হাসপাতাল তালিকা</h3>
-      </div>
+      </NavLink>
       {/* Hospitals list*/}
       {/* rangpur medical collage */}
       <NavLink to='/details-one-hospitals' className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
