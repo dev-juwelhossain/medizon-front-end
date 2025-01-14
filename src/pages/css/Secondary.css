@@ -3,8 +3,9 @@ body{
     font-family: "Hind Siliguri", serif;
 }
 .popular-doctors{
-    color: blue;
+    color: black;
     margin-top: 5px;
+    font-weight: 500;
 }
 
 .doctor-info img{

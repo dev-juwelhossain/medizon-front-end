@@ -56,7 +56,7 @@ const Doctors = () => {
             <div className="mt-3 text-[12px]">
               <a
                 href="#"
-                className="inline-flex items-center float-end mt-5 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center float-end mt-5 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
               >
                 বিস্তারিত
                 <svg

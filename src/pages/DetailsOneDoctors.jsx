@@ -1,10 +1,12 @@
+import { NavLink } from "react-router";
+
 const DetailsOneDoctors = () => {
   return (
     <div className="max-w-md m-2 mx-auto mb-2 ">
       {/* BAck Button */}
 
       <div className="flex">
-        <div className="flex m-2">
+        <NavLink to='/doctors' className="flex m-2">
           <a href="#">
             <svg
               className="w-6 h-6 text-green-500 dark:text-white"
@@ -25,7 +27,7 @@ const DetailsOneDoctors = () => {
             </svg>
           </a>
           <h2 className="font-semibold text-green-500">ডাক্তারের তথ্য </h2>
-        </div>
+        </NavLink>
 
         {/*####Share & Favourite Icon ####*/}
 

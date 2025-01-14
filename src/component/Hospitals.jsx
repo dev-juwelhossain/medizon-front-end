@@ -3,6 +3,7 @@ import { NavLink } from "react-router";
 const Hospitals = () => {
   return (
     <div className="max-w-md m-2 mx-auto">
+      {/* back button start here */}
        <div className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
           <svg
