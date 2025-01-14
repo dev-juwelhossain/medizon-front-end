@@ -89,7 +89,7 @@ const DetailsOneDoctors = () => {
       {/* Doctor's Information */}
       <div className="mt-10 ">
         <h4 className="px-3 mx-3 ml-3 font-semibold text-center text-green-500 rounded-lg shadow-md bg-gray-50">
-          তথ্য ও অভিজ্ঞতা{" "}
+          তথ্য ও অভিজ্ঞতা
         </h4>
       </div>
 
