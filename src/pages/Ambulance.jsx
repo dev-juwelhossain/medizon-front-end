@@ -1,7 +1,7 @@
 const Ambulance = () => {
   return (
     <div className="max-w-md m-3 mx-auto">
-      <div className="inline-flex px-2 mb-4 space-x-2 text-lg font-semibold text-green-500 dark:text-white">
+      <div className="inline-flex px-2 mb-4 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
           <svg
             className="w-5 h-5 text-green-500 mt-[2px] dark:text-white"

@@ -88,12 +88,74 @@ const DetailsOneDoctors = () => {
 
       {/* Doctor's Information */}
       <div className="mt-10 ">
-        <h4 className="px-3 mx-3 ml-3 font-semibold text-center text-green-500 bg-gray-100 rounded-sm">
+        <h4 className="px-3 mx-3 ml-3 font-semibold text-center text-green-500 rounded-lg shadow-md bg-gray-50">
           তথ্য ও অভিজ্ঞতা{" "}
         </h4>
       </div>
 
-      {/*  */}
+      {/* informaton*/}
+      <br />
+      <br />
+
+      <div className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
+        <svg
+          className="text-green-500 h-7 w-7 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+          />
+        </svg>
+        <h4 className="px-2 text-black">এপয়েন্টমেন্ট এর সময় :</h4>
+      </div>
+      <div className="ml-3">
+        <ul
+          role="list"
+          className="pl-5 space-y-3 list-disc marker:text-green-400 text-slate-500"
+        >
+          <li>দিন : (শনি-বৃহস্পতিবার)</li>
+          <li>সময় : (বিকাল ০৪.০০ - রাত ১০.০০) </li>
+          <li>
+            স্থান (রংপুর মেডিকেল কলেজ হাসপাতাল, Rangpur- Dinajpur Highway,
+            Cantt, Near Central Jail, রংপুর 5400)
+          </li>
+        </ul>
+      </div>
+      <div className="inline-flex mt-3 ml-4 font-semibold">
+        <svg
+          className="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"
+          />
+        </svg>
+        <p>পরামর্শ ফি- ৮০০/-</p>
+      </div>
+      {/* contact info */}
+      <div>
+        <h3 className="">
+          যোগাযোগ করুন
+        </h3>
+      </div>
     </div>
   );
 };

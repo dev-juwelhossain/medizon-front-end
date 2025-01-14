@@ -14,6 +14,7 @@ import Hospitals from "./component/Hospitals.jsx";
 import DoctorsDetails from "./pages/DoctorsDetails.jsx";
 import DetailsOneDoctors from "./pages/DetailsOneDoctors.jsx";
 import Ambulance from "./pages/Ambulance.jsx";
+import DetailsOneHospitals from "./pages/DetailsOneHospitals.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/ambulance",
         element: <Ambulance />,
+      },
+      {
+        path: "/details-one-hospitals",
+        element: <DetailsOneHospitals />,
       },
     ],
   },
