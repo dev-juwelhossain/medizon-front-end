@@ -48,7 +48,7 @@ const Home = () => {
 
       <div className="recommended-hospitals">
         <h2 className="mt-2 text-[15px]">সুপারিশকৃত হাসপাতাল সমুহ </h2>
-        <div className="flex items-center justify-between m-2 mt-3 -2">
+        <NavLink to='/hospitals' className="flex items-center justify-between m-2 mt-3 -2">
           <h2 className="mx-2 text-[14px]">আরো দেখুন</h2>
 
           <svg
@@ -61,7 +61,7 @@ const Home = () => {
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>
-        </div>
+        </NavLink>
       </div>
 
       {/* Recommended hospitals cards carousel*/}
@@ -86,7 +86,7 @@ const Home = () => {
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
               </a>
-              <a
+              <NavLink to='/details-one-hospitals'
                 href="#"
                 className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
               >
@@ -106,7 +106,7 @@ const Home = () => {
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@ const Home = () => {
 
       <div className="recommended-ambulance">
         <h2 className="mt-2 mb-2 text-[15px]">সুপারিশকৃত অ্যাম্বুলেন্স সমুহ</h2>
-        <div className="flex items-center justify-between m-2 mt-3">
+        <NavLink to='/ambulance' className="flex items-center justify-between m-2 mt-3">
           <h2 className="mx-2 text-[14px]">আরো দেখুন </h2>
 
           <svg
@@ -172,7 +172,7 @@ const Home = () => {
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>
-        </div>
+        </NavLink>
       </div>
 
       {/* Recommended ambulance cards carousel*/}
