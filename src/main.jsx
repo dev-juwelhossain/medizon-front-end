@@ -15,6 +15,7 @@ import DoctorsDetails from "./pages/DoctorsDetails.jsx";
 import DetailsOneDoctors from "./pages/DetailsOneDoctors.jsx";
 import Ambulance from "./pages/Ambulance.jsx";
 import DetailsOneHospitals from "./pages/DetailsOneHospitals.jsx";
+import Settings from "./pages/Settings.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/details-one-hospitals",
         element: <DetailsOneHospitals />,
+      },
+      {
+        path: "/settings",
+        element: <Settings />,
       },
     ],
   },
