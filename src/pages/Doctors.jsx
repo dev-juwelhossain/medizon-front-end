@@ -3,7 +3,7 @@ import "./css/Secondary.css";
 
 const Doctors = () => {
   return (
-    <div className="items-center max-w-md m-2 mx-auto mb-2 ml-2">
+    <div className="items-center max-w-md mx-auto mb-2 ml-2 mr-2">
       {/* Start code here */}
      
       {/* back button */}
