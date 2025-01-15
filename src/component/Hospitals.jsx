@@ -4,7 +4,10 @@ const Hospitals = () => {
   return (
     <div className="max-w-md m-2 mx-auto">
       {/* back button start here */}
-       <NavLink to='/' className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
+      <NavLink
+        to="/"
+        className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white"
+      >
         <a href="">
           <svg
             className="w-5 h-5 text-green-500 mt-[2px] dark:text-white"
@@ -23,13 +26,15 @@ const Hospitals = () => {
               d="m15 19-7-7 7-7"
             />
           </svg>
-          
         </a>
-        <h3 className="mb-4">হাসপাতাল তালিকা</h3>
+        <h3 className="">হাসপাতাল তালিকা</h3>
       </NavLink>
       {/* Hospitals list*/}
       {/* rangpur medical collage */}
-      <NavLink to='/details-one-hospitals' className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      <div 
+        className="bg-white border border-gray-300 rounded-lg shadow-md "
+      >
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -37,17 +42,18 @@ const Hospitals = () => {
             alt=""
           />
         </a>
-        <div className="px-2 py-3">
+        <div className="px-2 py-3 m-1">
           <a href="#">
             <h2 className="text-[15px] font-bold">
               রংপুর মেডিকেল কলেজ হাসপাতাল
             </h2>
-            <p className="text-[15px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-            <p className="text-[14px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
+            <p className="text-[15px]  "> +৮৮০-১৩১১২৩৪৫</p>
+            <p className="text-[14px] ">ধাপ রোড , মেডিকেল মোড়</p>
           </a>
-          <a
+         <NavLink NavLink
+        to="/details-one-hospitals"
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="mt-2 flex justify-center w-20 h-7 items-center px-2 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
           >
             বিস্তারিত
             <svg
@@ -65,11 +71,11 @@ const Hospitals = () => {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </a>
+          </NavLink>
         </div>
-      </NavLink>
+      </div>
       {/* labaid hospital */}
-      <div className=" mt-4 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+      <div className=" mt-6 m-1 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -82,12 +88,12 @@ const Hospitals = () => {
             <h2 className="text-[15px] font-bold">
               ল্যাব এইড ডায়াগনস্টিক সেন্টার
             </h2>
-            <p className="text-[15px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-            <p className="text-[14px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
+            <p className="text-[15px]  ">+৮৮০-১৩১১২৩৪৫</p>
+            <p className="text-[14px]  ">ধাপ রোড , মেডিকেল মোড়</p>
           </a>
           <a
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="flex justify-center w-20 h-7 items-center px-1 py-2 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white mt-2"
           >
             বিস্তারিত
             <svg
@@ -108,10 +114,10 @@ const Hospitals = () => {
           </a>
         </div>
       </div>
-      
+
       {/* popular diagnostic center */}
-      
-      <div className=" mt-4 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      <div className="mt-5 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -125,11 +131,13 @@ const Hospitals = () => {
               পপুলার ডায়াগনস্টিক সেন্টার, রংপুর
             </h2>
             <p className="text-[15px] "> +৮৮০-১৩১১২৩৪৫</p>
-            <p className="text-[14px] mb-1">৭৭/১, রোড নং-১, ধাপ, জেল রোড, রংপুর</p>
+            <p className="text-[14px] mb-2">
+              ৭৭/১, রোড নং-১, ধাপ, জেল রোড, রংপুর
+            </p>
           </a>
           <a
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="mb-2 flex justify-center w-20 h-7 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
           >
             বিস্তারিত
             <svg
@@ -150,10 +158,10 @@ const Hospitals = () => {
           </a>
         </div>
       </div>
-      
+
       {/* Prime Medical collage */}
-      
-      <div className=" mt-4 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      <div className="mt-5 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -166,12 +174,12 @@ const Hospitals = () => {
             <h2 className="text-[15px] font-bold">
               প্রাইম মেডিকেল কলেজ হাসপাতাল
             </h2>
-            <p className="text-[15px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-            <p className="text-[14px] m-1">পিরজাবাদ,বদরগঞ্জ রোড, রংপুর</p>
+            <p className="text-[15px]  "> +৮৮০-১৩১১২৩৪৫</p>
+            <p className="text-[14px] mb-2">পিরজাবাদ,বদরগঞ্জ রোড, রংপুর</p>
           </a>
           <a
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="flex justify-center w-20 h-7 mb-2 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
           >
             বিস্তারিত
             <svg
@@ -192,10 +200,10 @@ const Hospitals = () => {
           </a>
         </div>
       </div>
-      
-    {/* mother and child hospital */}
-    
-    <div className=" mt-4 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      {/* mother and child hospital */}
+
+      <div className=" mt-5 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -205,15 +213,15 @@ const Hospitals = () => {
         </a>
         <div className="px-2 py-3">
           <a href="#">
-            <h2 className="text-[15px] font-bold">
-              রংপুর মা ও শিশু হাসপাতাল
-            </h2>
-            <p className="text-[15px] m-1 "> +৮৮০-১৭৯০৬৩২৩২৩</p>
-            <p className="text-[14px] m-1">দানির মোড় এর পাশেই, বাবুখা রোড,পশ্চিম বাবুখা, রংপুর</p>
+            <h2 className="text-[15px] font-bold">রংপুর মা ও শিশু হাসপাতাল</h2>
+            <p className="text-[15px]  "> +৮৮০-১৭৯০৬৩২৩২৩</p>
+            <p className="text-[14px] mb-2">
+              দানির মোড় এর পাশেই, বাবুখা রোড,পশ্চিম বাবুখা, রংপুর
+            </p>
           </a>
           <a
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="mb-2 flex justify-center w-20 h-7 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
           >
             বিস্তারিত
             <svg
@@ -234,10 +242,10 @@ const Hospitals = () => {
           </a>
         </div>
       </div>
-      
+
       {/* doctors community hospitals */}
-      
-      <div className=" mt-4 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      <div className=" mt-5 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -248,10 +256,12 @@ const Hospitals = () => {
         <div className="px-2 py-3">
           <a href="#">
             <h2 className="text-[15px] font-bold">
-            ডক্টরস কমিউনিটি হাসপাতাল (প্রা.) লি.
+              ডক্টরস কমিউনিটি হাসপাতাল (প্রা.) লি.
             </h2>
             <p className="text-[15px] m-1 "> +৮৮০-১৭০১২৬৪৭০৪ </p>
-            <p className="text-[14px] m-1">মেডিকেল পূর্ব গেট, গংগাচড়া রোড, রংপুর</p>
+            <p className="text-[14px] m-1">
+              মেডিকেল পূর্ব গেট, গংগাচড়া রোড, রংপুর
+            </p>
           </a>
           <a
             href="#"
@@ -278,8 +288,8 @@ const Hospitals = () => {
       </div>
 
       {/* good health hospitals */}
-      
-      <div className=" mt-4 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      <div className="mt-5 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -289,15 +299,13 @@ const Hospitals = () => {
         </a>
         <div className="px-2 py-3">
           <a href="#">
-            <h2 className="text-[15px] font-bold">
-           গুড হেলথ হাসপাতাল
-            </h2>
-            <p className="text-[15px] m-1 "> +৮৮০-০১৭১৭৯৭৪৪৮৮ </p>
-            <p className="text-[14px] m-1">ধাপ রোড, রংপুর</p>
+            <h2 className="text-[15px] font-bold">গুড হেলথ হাসপাতাল</h2>
+            <p className="text-[15px]  "> +৮৮০-০১৭১৭৯৭৪৪৮৮ </p>
+            <p className="text-[14px] mb-2 ">ধাপ রোড, রংপুর</p>
           </a>
           <a
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="flex justify-center w-20 h-7 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
           >
             বিস্তারিত
             <svg
@@ -318,10 +326,10 @@ const Hospitals = () => {
           </a>
         </div>
       </div>
-      
+
       {/* marium eye hospital */}
-       
-      <div className=" mt-4 mb-20 bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+
+      <div className="mt-5 mb-20 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
             className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
@@ -331,15 +339,13 @@ const Hospitals = () => {
         </a>
         <div className="px-2 py-3">
           <a href="#">
-            <h2 className="text-[15px] font-bold">
-          মরিয়ম চক্ষু হাসপাতাল
-            </h2>
-            <p className="text-[15px] m-1 "> +৮৮০-০১৭১৬২৯১৭৯৪ </p>
-            <p className="text-[14px] m-1"> জি এল রয় রোড, রেইলগেট, রংপুর</p>
+            <h2 className="text-[15px] font-bold">মরিয়ম চক্ষু হাসপাতাল</h2>
+            <p className="text-[15px]  "> +৮৮০-০১৭১৬২৯১৭৯৪ </p>
+            <p className="text-[14px] mb-2"> জি এল রয় রোড, রেইলগেট, রংপুর</p>
           </a>
           <a
             href="#"
-            className="flex justify-center w-20 h-6 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+            className="flex justify-center w-20 h-7 items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white   dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
           >
             বিস্তারিত
             <svg
