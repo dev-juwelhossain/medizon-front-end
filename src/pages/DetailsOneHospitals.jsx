@@ -60,7 +60,7 @@ const DetailsOneHospitals = () => {
 
             {/* contact info */}
             <h3 className="ml-3 mb-2 font-semibold text-[20px]">
-              যোগাযোগ করুন
+              যোগাযোগ করুন :
             </h3>
 
             <div className="flex items-center mb-2 ml-3 space-x-1">
@@ -107,7 +107,7 @@ const DetailsOneHospitals = () => {
           <br />
         </div>
         <div>
-          <h2 className="ml-3 text-[20px] font-semibold">হাসপাতাল সম্পর্কে </h2>
+          <h2 className="ml-3 text-[20px] font-semibold">হাসপাতাল সম্পর্কে: </h2>
           <div className="m-1">
             <p className="p-2 border border-gray-400 rounded-lg shadow-lg">
               রংপুর মেডিকেল কলেজ হাসপাতাল উত্তরবঙ্গের অন্যতম বৃহৎ ও প্রধান

@@ -11,7 +11,7 @@ const Home = () => {
       {/* ################### Start code here ##########################*/}
 
       {/* Intro Video Here */}
-      <div className="intro-video @media screen and (max-width: 800px)">
+      <div className="intro-video @media screen and (max-width: 800px) m-2">
         <iframe
           style={{ borderRadius: '6px' }}
           width="100%"

@@ -126,6 +126,7 @@ const Settings = () => {
       <br />
       <br />
       <br />
+      <br />
       <div> 
         <h1 className="text-center text-gray-500">© Medizone - 2025 | V.1.0 </h1>
       </div>

@@ -16,6 +16,7 @@ import DetailsOneDoctors from "./pages/DetailsOneDoctors.jsx";
 import Ambulance from "./pages/Ambulance.jsx";
 import DetailsOneHospitals from "./pages/DetailsOneHospitals.jsx";
 import Settings from "./pages/Settings.jsx";
+import ExpertDoctors from "./pages/ExpertDoctors.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/settings",
         element: <Settings />,
+      },
+      {
+        path: "/expert-doctors",
+        element: <ExpertDoctors />,
       },
     ],
   },

@@ -6,7 +6,7 @@ const DetailsOneDoctors = () => {
       {/* BAck Button */}
 
       <div className="flex">
-        <NavLink to='/doctors' className="flex m-2">
+        <NavLink to="/doctors" className="flex m-2">
           <a href="#">
             <svg
               className="w-6 h-6 text-green-500 dark:text-white"
@@ -133,22 +133,34 @@ const DetailsOneDoctors = () => {
         </ul>
       </div>
       <div className="inline-flex mt-3 ml-4 font-semibold">
-        <svg
-          className="w-6 h-6 text-gray-800 dark:text-white"
-          aria-hidden="true"
+        <svg className="mr-2"
+          version="1.0"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
+          width="20px"
+          height="20px"
+          viewBox="0 0 512.000000 512.000000"
+          preserveAspectRatio="xMidYMid meet"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"
-          />
+          <g
+            transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M1395 4576 c-110 -27 -212 -103 -268 -199 -40 -67 -42 -90 -16 -155
+25 -64 84 -185 106 -219 14 -22 16 -22 41 -5 20 13 48 17 122 17 89 0 99 -2
+158 -34 35 -19 81 -55 103 -79 67 -77 69 -92 69 -564 l0 -418 -399 -2 -399 -3
+196 -203 197 -203 203 1 202 0 0 -711 c0 -786 -1 -768 65 -898 91 -178 251
+-299 464 -347 36 -8 140 -17 231 -20 144 -5 179 -3 270 15 234 48 549 179 746
+309 279 186 557 560 663 895 51 162 64 258 58 452 -4 132 -10 188 -27 250 -82
+299 -286 541 -520 616 -90 29 -249 36 -357 16 -141 -27 -228 -81 -297 -186
+-76 -116 -90 -165 -90 -321 0 -153 16 -228 67 -324 84 -159 257 -242 485 -234
+l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
+-28 -99 -33 -197 -37 -129 -5 -201 7 -274 46 -65 35 -130 109 -159 180 l-23
+57 -3 612 -3 613 320 2 320 3 -195 202 -195 202 -122 3 -122 3 -5 555 -6 555
+-27 99 c-69 255 -191 396 -378 441 -77 18 -253 18 -324 1z"
+            />
+          </g>
         </svg>
         <p>পরামর্শ ফি- ৮০০/-</p>
       </div>
@@ -197,8 +209,10 @@ const DetailsOneDoctors = () => {
         </div>
         <br />
         <div>
-          <h2 className="ml-2 mb-1 text-[20px] font-bold ">ডাক্তার সম্পর্কে :</h2>
-          
+          <h2 className="ml-2 mb-1 text-[20px] font-bold ">
+            ডাক্তার সম্পর্কে :
+          </h2>
+
           <p className="p-2 ml-1 mr-1 border border-gray-400 rounded-lg shadow-lg text-start">
             ডা. লাইক আহমেদ খান একজন অভিজ্ঞ মেডিসিন বিশেষজ্ঞ, যিনি ২০ বছরেরও বেশি
             সময় ধরে রোগীদের চিকিৎসা দিয়ে আসছেন। তিনি এমবিবিএস এবং এফসিপিএস
@@ -216,13 +230,11 @@ const DetailsOneDoctors = () => {
           </p>
         </div>
         <br />
-        
+
         {/* experiences */}
-        <h1 className="ml-3 mb-2 font-semibold text-[20px]">
-          অভিজ্ঞতা :
-        </h1>
+        <h1 className="ml-3 mb-2 font-semibold text-[20px]">অভিজ্ঞতা :</h1>
         {/* exp card start here */}
-        
+
         <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
           <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
           <div className="flex justify-between px-3 py-2">
@@ -238,7 +250,7 @@ const DetailsOneDoctors = () => {
         </div>
 
         {/* exp card -2 */}
-       
+
         <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
           <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
           <div className="flex justify-between px-3 py-2">
@@ -253,7 +265,7 @@ const DetailsOneDoctors = () => {
           </div>
         </div>
         {/* exp card -3 */}
-        
+
         <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
           <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
           <div className="flex justify-between px-3 py-2">
@@ -281,13 +293,10 @@ const DetailsOneDoctors = () => {
             </div>
           </div>
         </div>
-        
       </div>
       <br />
       <br />
       <br />
-      
-      
     </div>
   );
 };

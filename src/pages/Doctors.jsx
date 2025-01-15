@@ -3,7 +3,7 @@ import "./css/Secondary.css";
 
 const Doctors = () => {
   return (
-    <div className="max-w-md m-2 mx-auto mb-2 ml-2 mr-2">
+    <div className="items-center max-w-md m-2 mx-auto mb-2 ml-2">
       {/* Start code here */}
      
       {/* back button */}
@@ -33,9 +33,9 @@ const Doctors = () => {
       
        {/* Recommended Doctors List */}
        
-      <div className="popular-doctors">
-        <h2>জনপ্রিয় ডাক্তাররা</h2>
-      </div>
+      <NavLink to='/expert-doctors' className="popular-doctors">
+        <h2 className=""> বিশেষজ্ঞ ডাক্তাররা</h2>
+      </NavLink>
       <div className="doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">

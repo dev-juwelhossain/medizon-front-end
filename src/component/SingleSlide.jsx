@@ -2,7 +2,7 @@ const SingleSlide = () => {
   return (
     <>
       {/* here is profile card */}
-      <div className="doctor-profile m-2">
+      <div className="max-w-md m-3 mx-auto">
         <div className="w-100% border  flex  gap-4 rounded-md shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
