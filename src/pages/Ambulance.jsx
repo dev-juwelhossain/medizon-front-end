@@ -34,7 +34,7 @@ const Ambulance = () => {
             alt=""
           />
         </a>
-        <div className="px-2 py-3">
+        <div className="px-2 py-1">
           <div>
             <h2 className="text-[15px] font-bold">
               রংপুর বিপি অ্যাম্বুলেন্স সার্ভিস
@@ -44,6 +44,29 @@ const Ambulance = () => {
           </div>
           
         </div>
+        <a
+                href="#"
+                className="inline-flex items-center mb-2 ml-1 px-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+              >
+                যোগাযোগ করুন
+                <svg
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </a>
       </div>
       {/* LABAID Diagnostic Rangpur */}
        
@@ -55,7 +78,7 @@ const Ambulance = () => {
             alt=""
           />
         </a>
-        <div className="px-2 py-3">
+        <div className="px-2 py-1">
           <div>
             <h2 className="text-[15px] font-bold">
               ল্যাব এইড ডায়াগনস্টিক সেন্টার আম্বুলেন্স সার্ভিস
@@ -67,6 +90,29 @@ const Ambulance = () => {
           </div>
           
         </div>
+        <a
+                href="#"
+                className="inline-flex items-center mb-2 ml-1 px-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+              >
+               যোগাযোগ করুন
+                <svg
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </a>
       </div>
 
       {/* Update Ambulance Service */}
@@ -79,7 +125,7 @@ const Ambulance = () => {
             alt=""
           />
         </a>
-        <div className="px-2 py-3">
+        <div className="px-2 py-1">
           <div>
             <h2 className="text-[15px] font-bold">
               আপডেট আম্বুলেন্স সার্ভিস
@@ -89,6 +135,29 @@ const Ambulance = () => {
           </div>
           
         </div>  
+        <a
+                href="#"
+                className="inline-flex items-center mb-2 ml-1 px-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+              >
+                যোগাযোগ করুন
+                <svg
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </a>
       </div>
       
       {/* desh clinic ambulance service */}
@@ -101,7 +170,7 @@ const Ambulance = () => {
             alt=""
           />
         </a>
-        <div className="px-2 py-3">
+        <div className="px-2 py-1">
           <div>
             <h2 className="text-[15px] font-bold">
             দেশ ক্লিনিক অ্যাম্বুলেন্স সার্ভিস
@@ -111,7 +180,31 @@ const Ambulance = () => {
           </div>
           
         </div>  
+        <a
+                href="#"
+                className="inline-flex items-center mb-2 ml-1 px-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+              >
+                যোগাযোগ করুন
+                <svg
+                  className="w-4 h-5 mt-[2px] pb-[2px] text-green-500 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </a>
       </div>
+     
     
     </div>
   );

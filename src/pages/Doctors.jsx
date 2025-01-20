@@ -54,24 +54,26 @@ const Doctors = () => {
             </div>
             <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             <div className="mt-3 text-[12px]">
-              <a
+            <a
                 href="#"
-                className="inline-flex items-center mt-2 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
                 বিস্তারিত
                 <svg
-                  className="w-2 h-2 rtl:rotate-180 ms-1"
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
                   fill="none"
-                  viewBox="0 0 14 10"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </a>
@@ -103,24 +105,26 @@ const Doctors = () => {
             </div>
             <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             <div className="mt-3 text-[12px]">
-              <a
+            <a
                 href="#"
-                className="inline-flex items-center float-end mt-1 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white  dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
                 বিস্তারিত
                 <svg
-                  className="w-2 h-2 rtl:rotate-180 ms-1"
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
                   fill="none"
-                  viewBox="0 0 14 10"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </a>
@@ -139,7 +143,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/neurologist (1).png"
               alt=""
             />
@@ -151,7 +155,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/urology.png"
               alt=""
             />
@@ -163,7 +167,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/physician.png"
               alt=""
             />
@@ -175,7 +179,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/gastroenterology.png"
               alt=""
             />
@@ -187,7 +191,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border p-1 rounded-sm hover:bg-gray-200"
               src="img/physiotherapist.png"
               alt=""
             />
@@ -202,7 +206,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/medicine.png"
               alt=""
             />
@@ -214,7 +218,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/pediatrics.png"
               alt=""
             />
@@ -226,7 +230,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/orthopedics.png"
               alt=""
             />
@@ -238,7 +242,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/psychiatry.png"
               alt=""
             />
@@ -250,7 +254,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm  hover:shadow-lg"
               src="img/dermatology.png"
               alt=""
             />
@@ -265,7 +269,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/maternity.png"
               alt=""
             />
@@ -277,7 +281,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/red-eye.png"
               alt=""
             />
@@ -289,7 +293,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/cancer.png"
               alt=""
             />
@@ -301,7 +305,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/endocrine.png"
               alt=""
             />
@@ -313,7 +317,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/nephrology.png"
               alt=""
             />
@@ -330,7 +334,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/maternity.png"
               alt=""
             />
@@ -342,7 +346,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/red-eye.png"
               alt=""
             />
@@ -354,7 +358,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/cancer.png"
               alt=""
             />
@@ -366,7 +370,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border p-1 rounded-sm hover:bg-gray-200"
               src="img/endocrine.png"
               alt=""
             />
@@ -378,7 +382,7 @@ const Doctors = () => {
         <div>
           <a href="#">
             <img
-              className="mt-2 h-[60px] w-[60px] bg-white border border-black p-1 rounded-sm hover:bg-gray-200"
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
               src="img/nephrology.png"
               alt=""
             />
