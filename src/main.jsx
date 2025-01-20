@@ -18,6 +18,7 @@ import DetailsOneHospitals from "./pages/DetailsOneHospitals.jsx";
 import Settings from "./pages/Settings.jsx";
 import ExpertDoctors from "./pages/ExpertDoctors.jsx";
 import Labaid from "./pages/Labaid.jsx";
+import Popular from "./pages/Popular.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/labaid",
         element: <Labaid />,
+      },
+      {
+        path: "/popular",
+        element: <Popular />,
       },
     ],
   },

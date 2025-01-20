@@ -151,10 +151,10 @@ const Hospitals = () => {
                 <h2 className="text-[14px] font-bold">
                   পপুলার ডায়াগনস্টিক সেন্টার
                 </h2>
-                <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-                <p className="text-[13px] m-1">জেল রোড , ধাপ</p>
+                <p className="text-[13px] m-1 "> +৮৮০ ৯৬৬৬ ৭৮৭৮০১</p>
+                <p className="text-[13px] m-1">৭৭/১, রোড নং-১, ডিএইচপি, জেল রোড, রংপুর।</p>
               </div>
-              <NavLink  to='/details-one-hospitals'
+              <NavLink  to='/popular'
                 href="#"
                 className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
