@@ -67,10 +67,11 @@ const Home = () => {
       {/* Recommended hospitals cards carousel*/}
 
       <section className="flex items-center justify-center object-contain">
+        {/* here is profile card 1 */}
         <div className="m-2">
-          {/* here is profile card 1 */}
+          
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow] dark:bg-gray-800 dark:border-gray-700">
+          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[150px] w-auto"
@@ -79,31 +80,33 @@ const Home = () => {
               />
             </a>
             <div className="px-2 py-3">
-              <a href="#">
+              <div>
                 <h2 className="text-[14px] font-bold">
                   রংপুর মেডিকেল কলেজ হাসপাতাল
                 </h2>
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
-              </a>
-              <NavLink to='/details-one-hospitals'
+              </div>
+              <NavLink  to='./details-one-hospitals'
                 href="#"
-                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
                 বিস্তারিত
                 <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-1"
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
                   fill="none"
-                  viewBox="0 0 14 10"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </NavLink>
@@ -122,31 +125,33 @@ const Home = () => {
               />
             </a>
             <div className="px-2 py-3">
-              <a href="#">
+              <div>
                 <h2 className="text-[14px] font-bold">
                 ল্যাব এইড ডায়াগনস্টিক সেন্টার
                 </h2>
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫ </p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
-              </a>
+              </div>
               <a
                 href="#"
-                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-black rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
                 বিস্তারিত
                 <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-1"
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
                   fill="none"
-                  viewBox="0 0 14 10"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </a>
@@ -197,15 +202,15 @@ const Home = () => {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-gray-300 rounded-lg text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
                 যোগাযোগ করুন
                 <svg
-                  className="w-5 h-5 dark:text-white"
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="15px"
-                  height="15px"
+                  width="20px"
+                  height="20px"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -213,8 +218,8 @@ const Home = () => {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </a>
@@ -240,15 +245,15 @@ const Home = () => {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center px-1 py-1 font-normal text-center text-black  bg-white border border-gray-400 rounded-md text-[13px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
                 যোগাযোগ করুন
                 <svg
-                  className="w-4 h-5 dark:text-white"
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="15px"
-                  height="15px"
+                  width="20px"
+                  height="20px"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -256,8 +261,8 @@ const Home = () => {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </a>

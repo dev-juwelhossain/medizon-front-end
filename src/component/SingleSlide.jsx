@@ -21,25 +21,26 @@ const SingleSlide = () => {
             <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             {/* button here */}
             <div className="mt-3 text-[12px] ">
-              
               <a
                 href="#"
-                className="inline-flex items-center float-end mt-5 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white "
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[12px] hover:shadow-md"
               >
                 বিস্তারিত
                 <svg
-                  className="w-2 h-2 rtl:rotate-180 ms-1"
+                  className="w-4 h-5 text-green-500 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
                   fill="none"
-                  viewBox="0 0 14 10"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
                   />
                 </svg>
               </a>
