@@ -10,7 +10,7 @@ const HospitalSlide = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[140px] w-full"
                 src="../../img/rangpurmedi.jpg"
                 alt=""
               />
@@ -20,8 +20,8 @@ const HospitalSlide = () => {
                 <h2 className="text-[14px] font-bold">
                   রংপুর মেডিকেল কলেজ হাসপাতাল
                 </h2>
-                <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-                <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
+                <p className="text-[13px]"> +৮৮০-১৩১১২৩৪৫</p>
+                <p className="text-[13px]">ধাপ রোড , মেডিকেল মোড়</p>
               </div>
               <NavLink  to='/details-one-hospitals'
                 href="#"

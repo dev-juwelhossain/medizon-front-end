@@ -1,9 +1,12 @@
 import { Link, NavLink } from "react-router";
 import "./css/Secondary.css";
+import DoctorSlider from "../component/DoctorSlider";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Doctors = () => {
   return (
-    <div className="items-center max-w-md mx-auto mb-2 ml-2 mr-3">
+    <div className="justify-center max-w-md mx-auto mb-2 ml-2 mr-3">
       {/* Start code here */}
      
       {/* back button */}
@@ -32,6 +35,10 @@ const Doctors = () => {
       </NavLink>
       
        {/* Recommended Doctors List */}
+       <div className="bg-white ">
+        <DoctorSlider />
+      </div>
+
        
       <NavLink to='/expert-doctors' className="popular-doctors">
         <h2 className=""> বিশেষজ্ঞ ডাক্তাররা</h2>

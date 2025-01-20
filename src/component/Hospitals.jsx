@@ -1,5 +1,7 @@
 import { NavLink } from "react-router";
-import HospitalSlide from "./HospitalSlide";
+import HospitalSlide from "./HosSlider";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Hospitals = () => {
   return (
@@ -35,6 +37,7 @@ const Hospitals = () => {
         <HospitalSlide />
       </div>
       
+      {/* 1st row */}
 
       <section className="flex items-center justify-center object-contain">
         {/* here is profile card 1 */}
@@ -129,7 +132,7 @@ const Hospitals = () => {
           </div>
         </div>
       </section>
-
+          {/* 2nd row */}
       <section className="flex items-center justify-center object-contain">
         {/* here is profile card 1 */}
         <div className="m-2">
@@ -139,17 +142,17 @@ const Hospitals = () => {
             <a href="#">
               <img
                 className="items-center object-cover object-center h-[150px] w-auto"
-                src="../../img/rangpurmedi.jpg"
+                src="../../img/popular.jpg"
                 alt=""
               />
             </a>
             <div className="px-2 py-3">
               <div>
                 <h2 className="text-[14px] font-bold">
-                  রংপুর মেডিকেল কলেজ হাসপাতাল
+                  পপুলার ডায়াগনস্টিক সেন্টার
                 </h2>
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-                <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
+                <p className="text-[13px] m-1">জেল রোড , ধাপ</p>
               </div>
               <NavLink  to='/details-one-hospitals'
                 href="#"
@@ -183,15 +186,15 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
-                src="../../img/labaid.jpg"
+                className="items-center object-cover object-center h-[145px] w-[240px]"
+                src="../../img/good-health.jpg"
                 alt=""
               />
             </a>
             <div className="px-2 py-3">
               <div>
                 <h2 className="text-[14px] font-bold">
-                ল্যাব এইড ডায়াগনস্টিক সেন্টার
+                গুড হেলথ ডায়াগনস্টিক সেন্টার
                 </h2>
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫ </p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
