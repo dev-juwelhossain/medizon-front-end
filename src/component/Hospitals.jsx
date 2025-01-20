@@ -105,7 +105,7 @@ const Hospitals = () => {
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫ </p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
               </div>
-              <a
+              <NavLink to='/labaid'
                 href="#"
                 className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
@@ -127,7 +127,7 @@ const Hospitals = () => {
                     d="m9 5 7 7-7 7"
                   />
                 </svg>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
