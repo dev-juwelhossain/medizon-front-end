@@ -505,6 +505,9 @@ const Hospitals = () => {
           </div>
         </div>
       </section>
+      <br />
+      <br />
+      <br />
       
     </div>
   );
