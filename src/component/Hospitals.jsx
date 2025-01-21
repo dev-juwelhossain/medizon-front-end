@@ -141,7 +141,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-lg"
                 src="../../img/popular.jpg"
                 alt=""
               />
@@ -279,7 +279,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-none"
                 src="../../img/labaid.jpg"
                 alt=""
               />
