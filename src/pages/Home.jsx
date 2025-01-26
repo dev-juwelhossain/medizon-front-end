@@ -20,9 +20,9 @@ const Home = () => {
 
       {/* Recommended doctors  */}
       <NavLink to='/doctor-details' className="recommended-doctors">
-        <h3 className="mt-2 text-[15px]">বিশেষজ্ঞ ডাক্তার সমূহ</h3>
+        <h3 className="mt-2 text-[15px] text-green-500">বিশেষজ্ঞ ডাক্তার সমূহ</h3>
         <div className="flex items-center justify-between m-2 mt-3">
-          <h2 className="mx-1 text-[13px] ">আরো দেখুন</h2>
+          <h2 className="mx-1 text-[13px] text-green-500">আরো দেখুন</h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,9 +47,9 @@ const Home = () => {
       {/* recommended hospitals */}
 
       <div className="recommended-hospitals">
-        <h2 className="mt-2 text-[15px]">সুপারিশকৃত হাসপাতাল সমুহ </h2>
+        <h2 className="mt-2 text-[15px] text-green-500">সুপারিশকৃত হাসপাতাল সমুহ </h2>
         <NavLink to='/hospitals' className="flex items-center justify-between m-2 mt-3 -2">
-          <h2 className="mx-2 text-[14px]">আরো দেখুন</h2>
+          <h2 className="mx-2 text-[14px] text-green-500">আরো দেখুন</h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/rangpurmedi.jpg"
                 alt=""
               />
@@ -119,7 +119,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/labaid.jpg"
                 alt=""
               />
@@ -163,9 +163,9 @@ const Home = () => {
       {/* recommended ambulance */}
 
       <div className="recommended-ambulance">
-        <h2 className="mt-2 mb-2 text-[15px]">সুপারিশকৃত অ্যাম্বুলেন্স সমুহ</h2>
+        <h2 className="mt-2 mb-2 text-[15px] text-green-500 ">সুপারিশকৃত অ্যাম্বুলেন্স সমুহ</h2>
         <NavLink to='/ambulance' className="flex items-center justify-between m-2 mt-3">
-          <h2 className="mx-2 text-[14px]">আরো দেখুন </h2>
+          <h2 className="mx-2 text-[14px] text-green-500 ">আরো দেখুন </h2>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +189,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[140px] w-auto"
+                className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
                 src="../../img/bipi.jpg"
                 alt=""
               />
@@ -232,7 +232,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[140px] w-auto"
+                className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
                 src="../../img/bipi.jpg"
                 alt=""
               />
@@ -268,6 +268,88 @@ const Home = () => {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Department of Doctors */}
+      <NavLink to='/doctors' className="recommended-doctors">
+        <h3 className="mt-2 text-[15px] text-green-500">বিভাগ অনুযায়ী ডাক্তার সমূহ</h3>
+        <div className="flex items-center justify-between m-2 mt-3">
+          <h2 className="mx-1 text-[13px] text-green-500 ">আরো দেখুন</h2>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#0e9f6e"
+            className="float-right"
+          >
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+          </svg>
+        </div>
+      </NavLink>
+      
+      <section className="flex items-center justify-between m-2 ">
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
+              src="img/neurologist (1).png"
+              alt=""
+            />
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">
+              নিউরোলজি
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
+              src="img/urology.png"
+              alt=""
+            />
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">
+              ইউরোলজি
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
+              src="img/physician.png"
+              alt=""
+            />
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">
+              কার্ডিওলজি
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border  p-1 rounded-sm hover:bg-gray-200"
+              src="img/gastroenterology.png"
+              alt=""
+            />
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">
+              গ্যাস্ট্রোরোলজি
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              className="mt-2 h-[60px] w-[60px] bg-white border p-1 rounded-sm hover:bg-gray-200"
+              src="img/physiotherapist.png"
+              alt=""
+            />
+            <p className="text-[10px] mt-1 hover:text-green-600 text-center">
+              ফিজিওথেরাপি
+            </p>
+          </a>
         </div>
       </section>
       

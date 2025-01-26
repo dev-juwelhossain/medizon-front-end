@@ -5,7 +5,7 @@ const Settings = () => {
     <div className="m-2 mb-[70px] max-w-md mx-auto">
      
       {/* back button  */}
-      <NavLink to='/' className="inline-flex px-1 py-1 mb-3 mt-2 text-lg font-semibold text-green-500 dark:text-white">
+      <NavLink to='/' className="inline-flex px-1 py-1 mb-3 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
           <svg
             className="w-5 h-5 text-green-500 mt-[3px] dark:text-white"

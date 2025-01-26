@@ -141,7 +141,7 @@ const Doctors = () => {
       </Link>
 
       {/* Department of Doctors */}
-      <div className="popular-doctors">
+      <div id="popular-doctors" className="popular-doctors">
         <h2 className="mt-6">বিভাগ অনুযায়ী ডাক্তার</h2>
       </div>
 

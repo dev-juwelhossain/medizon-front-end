@@ -9,7 +9,7 @@ const Hospitals = () => {
       {/* back button start here */}
       <NavLink
         to="/"
-        className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white"
+        className="inline-flex px-2 py-1 mb-2 text-lg font-semibold text-green-500 dark:text-white"
       >
         <a href="">
           <svg
@@ -47,7 +47,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/rangpurmedi.jpg"
                 alt=""
               />
@@ -92,7 +92,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/labaid.jpg"
                 alt=""
               />
@@ -141,7 +141,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto rounded-lg"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/popular.jpg"
                 alt=""
               />
@@ -186,7 +186,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[145px] w-[240px]"
+                className="items-center object-cover object-center h-[145px] w-[240px] rounded-sm"
                 src="../../img/good-health.jpg"
                 alt=""
               />
@@ -234,7 +234,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/rangpurmedi.jpg"
                 alt=""
               />
@@ -279,7 +279,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto rounded-none"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/labaid.jpg"
                 alt=""
               />
@@ -327,7 +327,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/rangpurmedi.jpg"
                 alt=""
               />
@@ -372,7 +372,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/labaid.jpg"
                 alt=""
               />
@@ -420,7 +420,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/rangpurmedi.jpg"
                 alt=""
               />
@@ -465,7 +465,7 @@ const Hospitals = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
-                className="items-center object-cover object-center h-[150px] w-auto"
+                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
                 src="../../img/labaid.jpg"
                 alt=""
               />
