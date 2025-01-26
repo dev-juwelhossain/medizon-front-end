@@ -33,7 +33,7 @@ const Hospitals = () => {
         <h3 className="">হাসপাতাল তালিকা</h3>
       </NavLink>
       {/* Hospitals list*/}
-      <div className="bg-white ">
+      <div className="bg-white overflow-hidden">
         <HospitalSlide />
       </div>
       

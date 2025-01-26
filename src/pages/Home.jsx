@@ -38,9 +38,9 @@ const Home = () => {
       </NavLink>
       {/* Recommended doctors cards carousel*/}
 
-      <div className="bg-white ">
+     { <div className="bg-white  overflow-hidden m-2">
         <DoctorSlider />
-      </div>
+      </div>}
 
 
 

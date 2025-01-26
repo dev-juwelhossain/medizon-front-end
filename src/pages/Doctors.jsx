@@ -35,7 +35,7 @@ const Doctors = () => {
       </NavLink>
       
        {/* Recommended Doctors List */}
-       <div className="bg-white ">
+       <div className="bg-white overflow-hidden ">
         <DoctorSlider />
       </div>
 
