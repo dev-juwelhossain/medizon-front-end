@@ -290,7 +290,7 @@ const Home = () => {
         </div>
       </NavLink>
       
-      <section className="flex items-center justify-between m-2 ">
+      <section className="flex items-center justify-between m-2 mb-">
         <div>
           <a href="#">
             <img
@@ -352,6 +352,7 @@ const Home = () => {
           </a>
         </div>
       </section>
+      <br /> 
       
     </div>
     
