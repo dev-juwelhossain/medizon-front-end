@@ -35,7 +35,7 @@ const Doctors = () => {
       </NavLink>
       
        {/* Recommended Doctors List */}
-       <div className="bg-white overflow-hidden ">
+       <div className="bg-white overflow-hidden shadow-sm   ">
         <DoctorSlider />
       </div>
 
@@ -44,7 +44,7 @@ const Doctors = () => {
         <h2 className=""> বিশেষজ্ঞ ডাক্তাররা</h2>
       </NavLink>
       <div className="doctor-profile">
-        <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
+        <div className="w-100% border  flex  gap-4 rounded-sm p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
 
