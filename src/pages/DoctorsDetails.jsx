@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 const DoctorsDetails = () => {
   return (
-    <div className="max-w-md m-3 mx-auto">
+    <div className="max-w-md mb-5 mx-auto">
       {/* back button */}
       <NavLink to='/doctors' className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
@@ -259,7 +259,7 @@ const DoctorsDetails = () => {
         </div>
       </div>
 
-      <div className="m-2 mb-2 doctor-profile">
+      <div className="m-2 mb-3px doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
@@ -301,6 +301,15 @@ const DoctorsDetails = () => {
               </a>
             </div>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+       
         </div>
       </div>
       
