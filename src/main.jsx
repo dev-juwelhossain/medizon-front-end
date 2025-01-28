@@ -19,6 +19,11 @@ import Settings from "./pages/Settings.jsx";
 import ExpertDoctors from "./pages/ExpertDoctors.jsx";
 import Labaid from "./pages/Labaid.jsx";
 import Popular from "./pages/Popular.jsx";
+import SubSettings from "./pages/SubSettings.jsx";
+import Help from "./pages/Help.jsx";
+import FeedBack from "./pages/FeedBack.jsx";
+import Privacy from "./pages/Privacy.jsx";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +73,26 @@ const router = createBrowserRouter([
       {
         path: "/popular",
         element: <Popular />,
+      },
+      {
+        path: "/sub-settings",
+        element: <SubSettings />,
+      },
+      {
+        path: "/help",
+        element: <Help />,
+      },
+      {
+        path: "/feedback",
+        element: <FeedBack />,
+      },
+      {
+        path: "/privacy",
+        element: <Privacy />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },

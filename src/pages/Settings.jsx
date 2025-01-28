@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Settings = () => {
   return (
@@ -53,9 +53,9 @@ const Settings = () => {
             />
           </svg>
 
-          <h1 className="pl-2 text-[20px] text-gray-800 font-normal">
+          <Link to='/sub-settings' className="pl-2 text-[20px] text-gray-800 font-normal">
             Settings (সেটিংস)
-          </h1>
+          </Link>
         </div>
         {/* help */}
         <div className="flex items-center mt-2 mb-3 ml-2">
@@ -77,9 +77,9 @@ const Settings = () => {
             />
           </svg>
 
-          <h1 className="text-[21px] font-normal pl-2 text-gray-800">
+          <Link to='/help' className="text-[21px] font-normal pl-2 text-gray-800">
             Help (সাহায্য)
-          </h1>
+          </Link>
         </div>
         {/* feedback */}
         <div className="flex items-center mt-2 ml-2">
@@ -100,7 +100,7 @@ const Settings = () => {
               d="M7 11c.889-.086 1.416-.543 2.156-1.057a22.323 22.323 0 0 0 3.958-5.084 1.6 1.6 0 0 1 .582-.628 1.549 1.549 0 0 1 1.466-.087c.205.095.388.233.537.406a1.64 1.64 0 0 1 .384 1.279l-1.388 4.114M7 11H4v6.5A1.5 1.5 0 0 0 5.5 19v0A1.5 1.5 0 0 0 7 17.5V11Zm6.5-1h4.915c.286 0 .372.014.626.15.254.135.472.332.637.572a1.874 1.874 0 0 1 .215 1.673l-2.098 6.4C17.538 19.52 17.368 20 16.12 20c-2.303 0-4.79-.943-6.67-1.475"
             />
           </svg>
-          <h1 className="text-[20px] font-normal text-gray-800 ml-1">Feedback (ফিডব্যাক)</h1>
+          <Link to='/feedback' className="text-[20px] font-normal text-gray-800 ml-1">Feedback (ফিডব্যাক)</Link>
         </div>
         {/* privacy */}
         <div className="flex items-center mt-2 ml-2">
@@ -122,7 +122,7 @@ const Settings = () => {
             />
           </svg>
 
-          <h1 className="text-[20px] font-normal text-gray-800 ml-2">Privacy (গোপনীয়তা)</h1>
+          <Link to='/privacy' className="text-[20px] font-normal text-gray-800 ml-2">Privacy (গোপনীয়তা)</Link>
         </div>
 
         {/* about */}
@@ -144,7 +144,7 @@ const Settings = () => {
               d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
             />
           </svg>
-          <h1 className="text-[20px] ml-2 font-normal text-gray-800">About (সম্পর্কে)</h1>
+          <Link to='/about' className="text-[20px] ml-2 font-normal text-gray-800">About (সম্পর্কে)</Link>
         </div>
       </section>
       <br />

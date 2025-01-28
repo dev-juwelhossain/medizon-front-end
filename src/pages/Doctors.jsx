@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Doctors = () => {
   return (
-    <div className="justify-center max-w-md mx-auto mb-2 ml-2 mr-3">
+    <div className="max-w-md mx-auto mb-2 ml-2 mr-3">
       {/* Start code here */}
      
       {/* back button */}
