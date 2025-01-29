@@ -41,7 +41,7 @@ const Doctors = () => {
 
        
       <NavLink to='/expert-doctors' className="popular-doctors">
-        <h2 className=""> বিশেষজ্ঞ ডাক্তাররা</h2>
+        <h2 className=" text-green-500 ml-2"> বিশেষজ্ঞ ডাক্তাররা</h2>
       </NavLink>
       <div className="doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-sm p-4 bg-white">
@@ -54,10 +54,10 @@ const Doctors = () => {
           </div>
 
           <NavLink to='/details-one-doctors' className="doctor-name">
-            <h2>ডাঃ মােঃ আব্দুল মােমেন</h2>
-            <p>এমবিবিএস, এমএস (অর্থোপেডিক সার্জারি)</p>
+            <h2>অধ্যাপক ডাঃ বি.ডি. বিধু</h2>
+            <p>এমবিবিএস, এমডি (মেডিসিন), এফএসিপি, মেডিসিন (আমেরিকা)</p>
             <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-              <p>হাড়ের অস্ত্রোপচার</p>
+              <p>মেডিসিন </p>
             </div>
             <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
             <div className="mt-3 text-[12px]">
@@ -91,7 +91,7 @@ const Doctors = () => {
 
       {/* Favourite Doctors */}
       <div className="popular-doctors">
-        <h2>প্রিয় ডাক্তাররা</h2>
+        <h2 className="text-green-500 ml-2">প্রিয় ডাক্তাররা</h2>
       </div>
       {/* Doctor Card */}
       <Link to="/doctor-details" className="doctor-profile">
