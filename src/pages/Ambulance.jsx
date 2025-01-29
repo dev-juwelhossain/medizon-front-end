@@ -1,3 +1,36 @@
+import axios from "axios";
+import {useEffect, useState} from "react";
+const Ambulence =() =>{
+  const [ambulance, setAmbulance] = useState([])
+
+  /* useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/ambulance")
+        .then(response => response.json())
+        .then(data => setAmbulance(data))
+        .catch(error => console.error("Error fetching data:", error));
+      }, [])};
+
+   */
+
+
+
+useEffect(()=>{
+    async function getAllAmbulence() {
+      try {
+        const ambulance = await axios.get("http://127.0.0.1:8000/api/ambulance")
+        console.log(ambulance.data)
+        setAmbulance(ambulance.data)
+      }
+       catch(error){
+        console.log(error)
+       }
+
+
+    }
+    getAllAmbulence()
+  },[])
+}
+
 const Ambulance = () => {
   return (
     <div className="max-w-md m-3 mx-auto">
