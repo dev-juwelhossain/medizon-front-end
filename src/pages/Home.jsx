@@ -20,7 +20,7 @@ const Home = () => {
 
       {/* Recommended doctors  */}
       <NavLink to='/doctor-details' className="recommended-doctors">
-        <h3 className="mt-2 text-[15px] text-green-500">বিশেষজ্ঞ ডাক্তার সমূহ</h3>
+        <h3 className="mt-2 text-[15px] text-green-500">প্রিয় ডাক্তার সমূহ</h3>
         <div className="flex items-center justify-between m-2 mt-3">
           <h2 className="mx-1 text-[13px] text-green-500">আরো দেখুন</h2>
 
