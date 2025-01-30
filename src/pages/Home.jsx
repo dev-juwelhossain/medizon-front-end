@@ -38,7 +38,7 @@ const Home = () => {
       </NavLink>
       {/* Recommended doctors cards carousel*/}
 
-     { <div className="m-2 overflow-hidden bg-white">
+      {<div className="m-2 overflow-hidden bg-white">
         <DoctorSlider />
       </div>}
 
@@ -69,7 +69,7 @@ const Home = () => {
       <section className="flex items-center justify-center object-contain">
         {/* here is profile card 1 */}
         <div className="m-2">
-          
+
 
           <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
@@ -87,7 +87,7 @@ const Home = () => {
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
               </div>
-              <NavLink  to='./details-one-hospitals'
+              <NavLink to='./details-one-hospitals'
                 href="#"
                 className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
               >
@@ -127,7 +127,7 @@ const Home = () => {
             <div className="px-2 py-3">
               <div>
                 <h2 className="text-[14px] font-bold">
-                ল্যাব এইড ডায়াগনস্টিক সেন্টার
+                  ল্যাব এইড ডায়াগনস্টিক সেন্টার
                 </h2>
                 <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫ </p>
                 <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
@@ -289,7 +289,7 @@ const Home = () => {
           </svg>
         </div>
       </NavLink>
-      
+
       <section className="flex items-center justify-between m-2 mb-">
         <div>
           <a href="#">
@@ -352,10 +352,10 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <br /> 
-      
+      <br />
+
     </div>
-    
+
   );
 };
 

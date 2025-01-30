@@ -48,48 +48,94 @@ const Ambulance = () => {
         ambulance?.map(item => {
           return (
             <>
-              <div className="mb-4 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
-                    src={`https://medizone.ruddro.my.id/admin/ambulance/${item.ambulance_picture}`}
-                    alt=""
-                  />
-                </a>
-                <div className="px-2 py-1">
-                  <div>
-                    <h2 className="text-[15px] font-bold">
-                      {item.name}
-                    </h2>
-                    <p className="text-[15px] m-1 "> {item.phone_number}</p>
-                    <p className="text-[14px] m-1">{item.location}</p>
-                  </div>
+              <section className="flex items-center justify-center object-contain">
+        <div className="m-2">
+          {/* here is ambulance profile card 1 */}
 
-                </div>
-                <a
-                  href="#"
-                  className="inline-flex items-center mb-2 ml-1 px-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
+                src={`https://medizone.ruddro.my.id/admin/ambulance/${item.ambulance_picture}`}
+                alt=""
+              />
+            </a>
+            <div className="px-2 py-2">
+              <a href="#">
+                <h2 className="text-[14px] font-bold">{item.name}</h2>
+                <p className="text-[12px] m-1 ">{item.phone_number} </p>
+                <p className="text-[12px] m-1">{item.location}</p>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+              >
+                যোগাযোগ করুন
+                <svg
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="none"
+                  viewBox="0 0 24 24"
                 >
-                  যোগাযোগ করুন
-                  <svg
-                    className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.1"
-                      d="m9 5 7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="m-2">
+          {/* here is ambulance profile card 2*/}
+
+          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
+                src={`https://medizone.ruddro.my.id/admin/ambulance/${item.ambulance_picture}`}
+                alt=""
+              />
+            </a>
+            <div className="px-2 py-2">
+              <a href="#">
+                <h2 className="text-[14px] font-bold">{item.name}</h2>
+                <p className="text-[13px] m-1 ">{item.phone_number}</p>
+                <p className="text-[13px] m-1">{item.location}</p>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+              >
+                যোগাযোগ করুন
+                <svg
+                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.1"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
             </>
           )
         })
