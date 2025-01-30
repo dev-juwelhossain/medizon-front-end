@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 
 const Ambulance = () => {
   const [ambulance, setAmbulance] = useState()
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     // Make a request for a user with a given ID
-    axios.get('http://127.0.0.1:8000/api/ambulance')
+    axios.get(`${BASE_URL}/ambulance`)
       .then(function (response) {
         // handle success
         setAmbulance(response.data);
@@ -47,11 +48,11 @@ const Ambulance = () => {
         ambulance?.map(item => {
           return (
             <>
-              <div className="mb-4 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
+              <div className="mb-4 ml-1 mr-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <img
                     className="flex justify-center items-center h-[135px] w-full object-cover rounded-t-lg"
-                    src={`http://127.0.0.1:8000/admin/ambulance/${item.ambulance_picture}`}
+                    src={`https://medizone.ruddro.my.id/admin/ambulance/${item.ambulance_picture}`}
                     alt=""
                   />
                 </a>
