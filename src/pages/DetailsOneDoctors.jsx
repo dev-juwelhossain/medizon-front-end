@@ -7,7 +7,7 @@ const DetailsOneDoctors = () => {
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
   useEffect(() => {
     // Make a request for a user with a given ID
-    axios.get(`${BASE_URL}/doctor`)
+    axios.get(`${BASE_URL}/doctors`)
       .then(function (response) {
         // handle success
         setDoctor(response.data);
