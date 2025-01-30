@@ -1,6 +1,23 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
 
 const DetailsOneDoctors = () => {
+  const [doctor, setDoctor] =useState()
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  useEffect(() => {
+    // Make a request for a user with a given ID
+    axios.get(`${BASE_URL}/doctor`)
+      .then(function (response) {
+        // handle success
+        setDoctor(response.data);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+  }, [])
+  
   return (
     <div className="max-w-md m-2 mx-auto mb-2 ">
       {/* BAck Button */}
@@ -62,22 +79,26 @@ const DetailsOneDoctors = () => {
           </a>
         </div>
       </div>
-
-      {/* Doctor Details */}
+      {/* maping */}
+    { doctor?.map(item =>{
+      return <>
+      
+      
+     
 
       {/* Doctors Image */}
       <div className="flex">
         <div className=" m-2 overflow-hidden rounded-[8px] doctor-info">
-          <img src="../img/doctor.jpg" alt="" />
-          <p>অভিজ্ঞতা: ২০+ বছর</p>
+          <img src={`https://medizone.ruddro.my.id/admin/doctor/${item.doctor_img}`} alt="" />
+          <p>অভিজ্ঞতা: {item.experience}</p>
         </div>
 
         {/* Doctors Name Deatils */}
         <div className="mt-3 ml-1">
-          <h2 className="text-xl font-semibold">ডা. লাইক আহমেদ খান</h2>
-          <p className="text-sm text-gray-500">এমবিবিএস, এফসিপিএস (মেডিসিন)</p>
+          <h2 className="text-xl font-semibold"> {item.name} </h2>
+          <p className="text-sm text-gray-500"> {item.specialized} </p>
           <div className="h-auto mt-1 font-medium text-center text-white bg-blue-700 rounded-sm w-15 doctor-button ">
-            <p>মেডিসিন(Medicine)</p>
+            <p>{item.specialized}</p>
           </div>
         </div>
       </div>
@@ -85,7 +106,7 @@ const DetailsOneDoctors = () => {
       {/* Doctor's Information */}
       <div className="ml-3">
         <p className="text-sm text-gray-500 ">কর্মস্থল</p>
-        <p>রংপুর মেডিকেল কলেজ হাসপাতাল</p>
+        <p>{item.hospital}</p>
       </div>
 
       {/* Doctor's Information */}
@@ -124,11 +145,10 @@ const DetailsOneDoctors = () => {
           role="list"
           className="pl-5 space-y-3 list-disc marker:text-green-400 text-slate-500"
         >
-          <li>দিন : (শনি-বৃহস্পতিবার)</li>
-          <li>সময় : (বিকাল ০৪.০০ - রাত ১০.০০) </li>
+          <li>{item.appointment_time}</li>
+         
           <li>
-            স্থান : (রংপুর মেডিকেল কলেজ হাসপাতাল, Rangpur- Dinajpur Highway,
-            Cantt, Near Central Jail, রংপুর 5400)
+            স্থান : {item.address}
           </li>
         </ul>
       </div>
@@ -162,7 +182,7 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
             />
           </g>
         </svg>
-        <p>পরামর্শ ফি- ৮০০/-</p>
+        <p>পরামর্শ ফি- {item.consultation_fee}/-</p>
       </div>
       {/* contact info */}
       <div>
@@ -185,7 +205,7 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
               d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
             />
           </svg>
-          <p>+880 12345-67890</p>
+          <p>{item.contact}</p>
         </div>
         <div className="flex items-center ml-3 space-x-1">
           <svg
@@ -205,7 +225,7 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
               d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
             />
           </svg>
-          <p>+880 12345-67890</p>
+          
         </div>
         <br />
         <div>
@@ -214,19 +234,7 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
           </h2>
 
           <p className="p-2 ml-1 mr-1 border border-gray-400 rounded-lg shadow-lg text-start">
-            ডা. লাইক আহমেদ খান একজন অভিজ্ঞ মেডিসিন বিশেষজ্ঞ, যিনি ২০ বছরেরও বেশি
-            সময় ধরে রোগীদের চিকিৎসা দিয়ে আসছেন। তিনি এমবিবিএস এবং এফসিপিএস
-            (মেডিসিন) ডিগ্রিধারী এবং বর্তমানে রংপুর মেডিকেল কলেজ হাসপাতালে
-            কর্মরত। দীর্ঘমেয়াদি রোগের ব্যবস্থাপনা, ডায়াবেটিস, উচ্চ রক্তচাপ,
-            হেপাটোলজি এবং অন্যান্য জটিল চিকিৎসার ক্ষেত্রে তাঁর বিশেষ দক্ষতা
-            রয়েছে। ডা. লাইক আহমেদ খান মেডিকেল চেকআপ, ডায়াগনোসিস, রোগ
-            প্রতিরোধমূলক পরামর্শ এবং উন্নতমানের চিকিৎসার মাধ্যমে অসংখ্য রোগীকে
-            সুস্থ করেছেন। তিনি দেশি ও আন্তর্জাতিক বিভিন্ন মেডিকেল সেমিনার এবং
-            প্রশিক্ষণে অংশগ্রহণ করে সর্বশেষ চিকিৎসা পদ্ধতিতে নিজেকে আপডেট
-            রেখেছেন। রোগীদের সাথে বন্ধুত্বপূর্ণ আচরণ, সঠিক রোগ নির্ণয়ের তীক্ষ্ণ
-            নজর এবং উন্নত ব্যবস্থাপনায় তিনি রোগীদের মধ্যে আস্থার জায়গা তৈরি
-            করেছেন। তাঁর মানবিকতা এবং চিকিৎসার দক্ষতা তাঁকে একজন শ্রদ্ধাভাজন
-            চিকিৎসক হিসেবে পরিচিত করেছে।
+           {item.abount_doctor}
           </p>
         </div>
         <br />
@@ -236,15 +244,15 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
         {/* exp card start here */}
 
         <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
-          <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
+          <h1 className="pt-1 mt-1 ml-2 ">{item.e_hospital}</h1>
           <div className="flex justify-between px-3 py-2">
             <div>
               <p className="text-[12px] text-slate-500">পদবী</p>
-              <p>এফসিপিএস (মেডিসিন)</p>
+              <p>{item.e_degree}</p>
             </div>
             <div>
               <p className="text-[12px] text-slate-500">অভিজ্ঞতার সময়কাল</p>
-              <p>আট বছর</p>
+              <p>{item.e_experience_year}</p>
             </div>
           </div>
         </div>
@@ -266,38 +274,19 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
         </div>
         {/* exp card -3 */}
 
-        <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
-          <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
-          <div className="flex justify-between px-3 py-2">
-            <div>
-              <p className="text-[12px] text-slate-500">পদবী</p>
-              <p>এফসিপিএস (মেডিসিন)</p>
-            </div>
-            <div>
-              <p className="text-[12px] text-slate-500">অভিজ্ঞতার সময়কাল</p>
-              <p>আট বছর</p>
-            </div>
-          </div>
-        </div>
+        
+      
         {/* exp card -4 */}
-        <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
-          <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
-          <div className="flex justify-between px-3 py-2">
-            <div>
-              <p className="text-[12px] text-slate-500">পদবী</p>
-              <p>এফসিপিএস (মেডিসিন)</p>
-            </div>
-            <div>
-              <p className="text-[12px] text-slate-500">অভিজ্ঞতার সময়কাল</p>
-              <p>আট বছর</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <br />
       <br />
       <br />
+      </>
+     })
+     }
     </div>
+    
   );
 };
 

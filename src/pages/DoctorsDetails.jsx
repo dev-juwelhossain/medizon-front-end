@@ -1,8 +1,10 @@
+
 import { NavLink } from "react-router";
 
 const DoctorsDetails = () => {
+  
   return (
-    <div className="max-w-md mb-5 mx-auto">
+    <div className="max-w-md mx-auto mb-5">
       {/* back button */}
       <NavLink to='/doctors' className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
