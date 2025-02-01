@@ -41,10 +41,24 @@ const Doctors = () => {
 
        
       <NavLink to='/expert-doctors' className="popular-doctors">
-        <h2 className=" text-green-500 ml-2"> বিশেষজ্ঞ ডাক্তাররা</h2>
+        <h2 className=" text-green-500 mt-3 ml-2"> বিশেষজ্ঞ ডাক্তাররা</h2>
+        <div className="flex items-center justify-between m-2 mt-3">
+          <h2 className="mx-1 text-[13px] text-green-500">আরো দেখুন</h2>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#0e9f6e"
+            className="float-right"
+          >
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+          </svg>
+        </div>
       </NavLink>
       <div className="doctor-profile">
-        <div className="w-100% border  flex  gap-4 rounded-sm p-4 bg-white">
+        <div className="w-100% border  flex  gap-4 rounded-md p-4 bg-white shadow-md">
           <div className="doctor-info">
             <img src="../img/doctor.jpg" alt="" />
 
