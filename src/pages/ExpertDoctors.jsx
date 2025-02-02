@@ -49,13 +49,13 @@ const ExpertDoctors = () => {
         </div>
   
         {/* ##### Doctors List###### */}
-        {singledoc?.map(item => {
+        {  singledoc?.map(item => {
       return (
       <>
         <div className="mb-2 doctor-profile">
           <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
             <div className="doctor-info">
-              <img src={`https://medizone.ruddro.my.id/admin/singledoc/${item.s_doc_picture}`} alt="" />
+              <img src={`http://127.0.0.1:8000/admin/singledoc/${item.s_doc_picture}`} alt="" />
   
               <div>
                 <p className="mt-2 text-center ">অভিজ্ঞতা: {item.s_doc_experience} + বছর</p>
@@ -98,8 +98,8 @@ const ExpertDoctors = () => {
         </div>
         </>
       )
-    })
-    }
+    }) 
+}
       </div>
     );
 };
