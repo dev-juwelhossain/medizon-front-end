@@ -66,14 +66,14 @@ const ExpertDoctors = () => {
               <h2>{item.s_doc_name}</h2>
               <p>{item.s_doc_degree}</p>
               <p className="font-bold">{item.s_doc_position}</p>
-              <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+              <div className="w-auto h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
                 <p>{item.s_doc_specialized}</p>
               </div>
               <p className="text-[15px] mt-1">{item.s_doc_hospital}</p>
               <div className="mt-3 text-[12px]">
                 <a
                   href="#"
-                  className="inline-flex items-center float-end mt-5 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                  className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
                 >
                   বিস্তারিত
                   <svg
