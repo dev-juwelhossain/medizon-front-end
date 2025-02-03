@@ -44,19 +44,20 @@ const Ambulance = () => {
         <h3 className="mb-4">অ্যাম্বুলেন্স তালিকা</h3>
       </div>
       {/* BP ambulance service */}
-      {
-        ambulance?.map(item => {
-          return (
-            <>
-              <section className="flex items-center justify-center object-contain">
+      <section className="grid grid-cols-2 object-contain gridify-center s-center ">
+        {
+          ambulance?.map(item => {
+            return (
+              <>
+
                 <div className="m-2">
                   {/* here is ambulance profile card 1 */}
 
                   <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                       <img
-                        className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
-                        src={`https://medizone.ruddro.my.id/admin/ambulance/${item.ambulance_picture}`}
+                        className="items-center object-cover object-center h-[140px] w-[100%] rounded-sm"
+                        src={`http://127.0.0.1:8000/admin/ambulance/${item.ambulance_picture}`}
                         alt=""
                       />
                     </a>
@@ -92,54 +93,12 @@ const Ambulance = () => {
                     </div>
                   </div>
                 </div>
-                <div className="m-2">
-                  {/* here is ambulance profile card 2*/}
 
-                  <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                      <img
-                        className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
-                        src={`https://medizone.ruddro.my.id/admin/ambulance/${item.ambulance_picture}`}
-                        alt=""
-                      />
-                    </a>
-                    <div className="px-2 py-2">
-                      <a href="#">
-                        <h2 className="text-[14px] font-bold">{item.name}</h2>
-                        <p className="text-[13px] m-1 ">{item.phone_number}</p>
-                        <p className="text-[13px] m-1">{item.location}</p>
-                      </a>
-                      <a
-                        href="#"
-                        className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-                      >
-                        যোগাযোগ করুন
-                        <svg
-                          className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20px"
-                          height="20px"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="1.1"
-                            d="m9 5 7 7-7 7"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </>
-          )
-        })
-      }
+              </>
+            )
+          })
+        }
+      </section>
       <br /><br /><br />
     </div>
   );

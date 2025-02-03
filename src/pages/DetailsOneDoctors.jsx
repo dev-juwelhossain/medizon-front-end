@@ -89,7 +89,7 @@ const DetailsOneDoctors = () => {
       {/* Doctors Image */}
       <div className="flex">
         <div className=" m-2 overflow-hidden rounded-[8px] doctor-info">
-          <img src={`https://medizone.ruddro.my.id/admin/doctor/${item.doctor_img}`} alt="" />
+          <img src={`http://127.0.0.1:8000/admin/doctors${item.doctor_img}`} alt="" />
           <p>অভিজ্ঞতা: {item.experience}</p>
         </div>
 

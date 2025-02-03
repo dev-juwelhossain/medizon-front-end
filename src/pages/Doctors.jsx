@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Doctors = () => {
   return (
-    <div className="max-w-md mx-auto mb-[70px] ml-2 mr-3">
+    <div className="max-w-md m-3 mx-auto">
       {/* Start code here */}
      
       {/* back button */}
@@ -35,13 +35,13 @@ const Doctors = () => {
       </NavLink>
       
        {/* Recommended Doctors List */}
-       <div className="bg-white overflow-hidden shadow-sm   ">
+       <div className="overflow-hidden bg-white shadow-sm ">
         <DoctorSlider />
       </div>
 
        
       <NavLink to='/expert-doctors' className="popular-doctors">
-        <h2 className=" text-green-500 mt-3 ml-2"> বিশেষজ্ঞ ডাক্তাররা</h2>
+        <h2 className="mt-3 ml-2 text-green-500 "> বিশেষজ্ঞ ডাক্তাররা</h2>
         <div className="flex items-center justify-between m-2 mt-3">
           <h2 className="mx-1 text-[13px] text-green-500">আরো দেখুন</h2>
 
@@ -105,7 +105,7 @@ const Doctors = () => {
 
       {/* Favourite Doctors */}
       <div className="popular-doctors">
-        <h2 className="text-green-500 ml-2">প্রিয় ডাক্তাররা</h2>
+        <h2 className="ml-2 text-green-500">প্রিয় ডাক্তাররা</h2>
       </div>
       {/* Doctor Card */}
       <Link to="/doctor-details" className="doctor-profile">
