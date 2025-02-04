@@ -1,7 +1,7 @@
 
 const Privacy = () => {
     return (
-        <div>
+        <div className="max-w-md mx-auto">
             <h1>Privacy</h1>
         </div>
     );

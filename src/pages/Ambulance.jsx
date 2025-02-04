@@ -44,7 +44,7 @@ const Ambulance = () => {
         <h3 className="mb-4">অ্যাম্বুলেন্স তালিকা</h3>
       </div>
       {/* BP ambulance service */}
-      <section className="grid grid-cols-2 object-contain gridify-center s-center ">
+      <section className="grid grid-cols-2 object-contain  ">
         {
           ambulance?.map(item => {
             return (

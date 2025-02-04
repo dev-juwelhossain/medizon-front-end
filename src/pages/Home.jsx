@@ -4,8 +4,43 @@ import DoctorSlider from "../component/DoctorSlider";
 import "./css/Primary.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 
 const Home = () => {
+  const [ambulance, setAmbulance] = useState()
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+  useEffect(() => {
+    // Make a request for a user with a given ID
+    axios.get(`${BASE_URL}/ambulance`)
+      .then(function (response) {
+        // handle success
+        setAmbulance(response.data.slice(0, 2))
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+  }, [])
+
+  const [hospital, setHospital] = useState()
+  
+
+  useEffect(() => {
+    // Make a request for a user with a given ID
+    axios.get(`${BASE_URL}/hospital`)
+      .then(function (response) {
+        // handle success
+        setHospital(response.data.slice(0, 2))
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+  }, [])
+
   return (
     <div className="m-2 mb-[70px] max-w-md mx-auto">
       {/* ################### Start code here ##########################*/}
@@ -46,119 +81,67 @@ const Home = () => {
 
       {/* recommended hospitals */}
 
-      <div className="recommended-hospitals">
-        <h2 className="mt-2 text-[15px] text-green-500">সুপারিশকৃত হাসপাতাল সমুহ </h2>
-        <NavLink to='/hospitals' className="flex items-center justify-between m-2 mt-3 -2">
-          <h2 className="mx-2 text-[14px] text-green-500">আরো দেখুন</h2>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="22px"
-            viewBox="0 -960 960 960"
-            width="22px"
-            fill="#0e9f6e"
-            className="float-right "
-          >
-            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-          </svg>
-        </NavLink>
-      </div>
-
-      {/* Recommended hospitals cards carousel*/}
-
-      <section className="flex items-center justify-center object-contain">
+      <section className="grid grid-cols-2 object-contain items-center ">
         {/* here is profile card 1 */}
-        <div className="m-2">
+        {
+          hospital?.map(item => {
+            return (
+              <>
+                <div className="m-2">
 
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img
-                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
-                src="../../img/rangpurmedi.jpg"
-                alt=""
-              />
-            </a>
-            <div className="px-2 py-3">
-              <div>
-                <h2 className="text-[14px] font-bold">
-                  রংপুর মেডিকেল কলেজ হাসপাতাল
-                </h2>
-                <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫</p>
-                <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
-              </div>
-              <NavLink to='./details-one-hospitals'
-                href="#"
-                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-              >
-                বিস্তারিত
-                <svg
-                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.1"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </NavLink>
-            </div>
-          </div>
-        </div>
-        <div className="m-2">
-          {/* here is  profile card 2*/}
+                  <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                      <img
+                        className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
+                        src={`http://127.0.0.1:8000/admin/hospitals/${item.hospital_picture}`}
+                        alt=""
+                      />
+                    </a>
+                    <div className="px-2 py-3">
+                      <div>
+                        <h2 className="text-[14px] font-bold">
+                         {item.name}
+                        </h2>
+                        <p className="text-[13px] m-1 "> {item.phone_number}</p>
+                        <p className="text-[13px] m-1">{item.location}</p>
+                      </div>
+                      <NavLink to='/details-one-hospitals'
+                        href="#"
+                        className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+                      >
+                        বিস্তারিত
+                        <svg
+                          className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20px"
+                          height="20px"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="1.1"
+                            d="m9 5 7 7-7 7"
+                          />
+                        </svg>
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
+          })
+        }
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img
-                className="items-center object-cover object-center h-[150px] w-auto rounded-sm"
-                src="../../img/labaid.jpg"
-                alt=""
-              />
-            </a>
-            <div className="px-2 py-3">
-              <div>
-                <h2 className="text-[14px] font-bold">
-                  ল্যাব এইড ডায়াগনস্টিক সেন্টার
-                </h2>
-                <p className="text-[13px] m-1 "> +৮৮০-১৩১১২৩৪৫ </p>
-                <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
-              </div>
-              <a
-                href="#"
-                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-              >
-                বিস্তারিত
-                <svg
-                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.1"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+
       </section>
+
+ 
+
 
       {/* recommended ambulance */}
 
@@ -182,93 +165,60 @@ const Home = () => {
 
       {/* Recommended ambulance cards carousel*/}
 
-      <section className="flex items-center justify-center object-contain">
-        <div className="m-2">
-          {/* here is ambulance profile card 1 */}
+      <section className="grid grid-cols-2 object-contain items-center ">
+        {
+          ambulance?.map(item => {
+            return (
+              <>
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img
-                className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
-                src="../../img/bipi.jpg"
-                alt=""
-              />
-            </a>
-            <div className="px-2 py-2">
-              <a href="#">
-                <h2 className="text-[14px] font-bold">আপডেট আম্বুলেন্স সার্ভিস</h2>
-                <p className="text-[12px] m-1 ">+৮৮০-১৯৭১-৫৫৫৫৫৫ </p>
-                <p className="text-[12px] m-1">দিনাজপুর হাইওয়ে, রংপুর</p>
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-              >
-                যোগাযোগ করুন
-                <svg
-                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.1"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="m-2">
-          {/* here is ambulance profile card 2*/}
+                <div className="m-2">
+                  {/* here is ambulance profile card 1 */}
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img
-                className="items-center object-cover object-center h-[140px] w-auto rounded-sm"
-                src="../../img/bipi.jpg"
-                alt=""
-              />
-            </a>
-            <div className="px-2 py-2">
-              <a href="#">
-                <h2 className="text-[14px] font-bold">বিপি অ্যাম্বুলেন্স সার্ভিস</h2>
-                <p className="text-[13px] m-1 ">০১৩২৩৫৪০৬১</p>
-                <p className="text-[13px] m-1">ধাপ রোড , মেডিকেল মোড়</p>
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-              >
-                যোগাযোগ করুন
-                <svg
-                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.1"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+                  <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                      <img
+                        className="items-center object-cover object-center h-[140px] w-[100%] rounded-sm"
+                        src={`http://127.0.0.1:8000/admin/ambulance/${item.ambulance_picture}`}
+                        alt=""
+                      />
+                    </a>
+                    <div className="px-2 py-2">
+                      <a href="#">
+                        <h2 className="text-[14px] font-bold">{item.name}</h2>
+                        <p className="text-[12px] m-1 ">{item.phone_number} </p>
+                        <p className="text-[12px] m-1">{item.location}</p>
+                      </a>
+                      <a
+                        href="#"
+                        className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
+                      >
+                        যোগাযোগ করুন
+                        <svg
+                          className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20px"
+                          height="20px"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="1.1"
+                            d="m9 5 7 7-7 7"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </>
+            )
+          })
+        }
       </section>
 
       {/* Department of Doctors */}
