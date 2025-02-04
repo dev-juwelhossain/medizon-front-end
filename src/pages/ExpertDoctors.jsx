@@ -66,8 +66,8 @@ const ExpertDoctors = () => {
               <h2>{item.s_doc_name}</h2>
               <p>{item.s_doc_degree}</p>
               <p className="font-bold">{item.s_doc_position}</p>
-              <div className="w-auto h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-                <p>{item.s_doc_specialized}</p>
+              <div className="w-auto h-auto mt-1 text-center  ">
+                <p className="P-2 bg-green-600 text-white rounded-md">{item.s_doc_specialized}</p>
               </div>
               <p className="text-[15px] mt-1">{item.s_doc_hospital}</p>
               <div className="mt-3 text-[12px]">
