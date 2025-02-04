@@ -23,12 +23,12 @@ const DoctorsDetails = () => {
 
 
   return (
-    <div className="max-w-md mx-auto mb-5">
+    <div className="max-w-md mx-auto">
       {/* back button */}
-      <NavLink to='/doctors' className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
+      <NavLink to='/doctors' className="inline-flex items-center px-2 py-1 mb-4 text-md font-semibold text-green-500 dark:text-white">
         <a href="">
           <svg
-            className="w-5 h-5 text-green-500 mt-[2px] dark:text-white"
+            className=" text-green-500  dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -59,7 +59,7 @@ const DoctorsDetails = () => {
           return (
             <>
 
-              <div className="m-2 mb-2 doctor-profile">
+              <div className="m-2 mb-3 doctor-profile">
                 <div className="w-100% border  flex  gap-4 rounded-sm shadow-lg p-4 bg-white">
                   <div className="doctor-info">
                     <img src={`http://127.0.0.1:8000/admin/doctors/${item.doctor_img}`} alt="" />
@@ -73,14 +73,14 @@ const DoctorsDetails = () => {
                     <h2>{item.name}</h2>
                     <p>{item.degree}</p>
                     <p className="font-bold">{item.hospital}</p>
-                    <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                    <div className="w-fit px-4 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
                       <p>{item.specialized}</p>
                     </div>
-                    <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
-                    <div className="mt-3 text-[12px] flex justify-center items-center">
+                    <p className="text-[15px] mt-2">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
+                    <div className="mt-3 float-start text-[12px] flex justify-center items-center">
                       <a
                         href="#"
-                        className="inline-flex justify-center items-center float-end mt-5 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50 rounded-md text-[10px] hover:shadow-xl"
+                        className="inline-flex justify-center items-center float-right  px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50 rounded-md text-[10px] hover:shadow-xl"
                       >
                         বিস্তারিত
                         <svg
@@ -102,7 +102,9 @@ const DoctorsDetails = () => {
           )
         })
       }
-
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
