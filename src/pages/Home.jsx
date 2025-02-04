@@ -26,7 +26,7 @@ const Home = () => {
   }, [])
 
   const [hospital, setHospital] = useState()
-  
+
 
   useEffect(() => {
     // Make a request for a user with a given ID
@@ -47,10 +47,10 @@ const Home = () => {
 
       {/* Intro Video Here */}
       <div className="intro-video @media screen and (max-width: 800px) m-2">
-        <iframe
-          style={{ borderRadius: '6px' }}
+        <iframe style={{ borderRadius: '6px' }}
           width="100%"
-          height="200px" src="https://www.youtube.com/embed/E7Bpg77s5_o" title="ঘরে বসেই স্বাস্থ্যসেবা | Sebaghar | Telemedicine | MBBS Doctor | Ekhon TV" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          height="200px"
+          src="https://www.youtube.com/embed/wBrm5Xfu9UU?si=F2RyQW2Q9hIUbelr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
       {/* Recommended doctors  */}
@@ -101,7 +101,7 @@ const Home = () => {
                     <div className="px-2 py-3">
                       <div>
                         <h2 className="text-[14px] font-bold">
-                         {item.name}
+                          {item.name}
                         </h2>
                         <p className="text-[13px] m-1 "> {item.phone_number}</p>
                         <p className="text-[13px] m-1">{item.location}</p>
@@ -140,7 +140,7 @@ const Home = () => {
 
       </section>
 
- 
+
 
 
       {/* recommended ambulance */}

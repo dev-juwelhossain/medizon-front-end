@@ -77,26 +77,21 @@ const DoctorsDetails = () => {
                       <p>{item.specialized}</p>
                     </div>
                     <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
-                    <div className="mt-3 text-[12px]">
+                    <div className="mt-3 text-[12px] flex justify-center items-center">
                       <a
                         href="#"
-                        className="inline-flex items-center float-end mt-5 px-[2px] py-[2px] font-normal text-center text-black  bg-white border border-black rounded-md text-[10px] hover:bg-green-500 hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-500 dark:focus:ring-green-800"
+                        className="inline-flex justify-center items-center float-end mt-5 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50 rounded-md text-[10px] hover:shadow-xl"
                       >
                         বিস্তারিত
                         <svg
-                          className="w-2 h-2 rtl:rotate-180 ms-1"
-                          aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 14 10"
+                          height="15px"
+                          viewBox="0 -960 960 960"
+                          width="20px"
+                          fill="#0e9f6e"
+                          className=""
                         >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9"
-                          />
+                          <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>
                       </a>
                     </div>

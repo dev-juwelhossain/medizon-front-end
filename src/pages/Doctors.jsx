@@ -3,17 +3,35 @@ import "./css/Secondary.css";
 import DoctorSlider from "../component/DoctorSlider";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Doctors = () => {
+  const [doctors, setDoctors] = useState()
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+  useEffect(() => {
+    // Make a request for a user with a given ID
+    axios.get(`${BASE_URL}/doctors`)
+      .then(function (response) {
+        // handle success
+        setDoctors(response.data.slice(0, 2));
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+  }, [])
+  console.log(doctors);
   return (
     <div className="max-w-md m-3 mx-auto">
       {/* Start code here */}
      
       {/* back button */}
-      <NavLink to='/' className="inline-flex px-1 py-1 mb-3 text-lg font-semibold text-green-500 dark:text-white">
+      <NavLink to='/' className="inline-flex items-center px-1 py-1 mb-3 text-lg font-semibold text-green-500 dark:text-white">
         <a href="">
           <svg
-            className="w-5 h-5 text-green-500 mt-[2px] dark:text-white"
+            className=" text-green-500 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -57,56 +75,72 @@ const Doctors = () => {
           </svg>
         </div>
       </NavLink>
-      <div className="doctor-profile">
-        <div className="w-100% border  flex  gap-4 rounded-md p-4 bg-white shadow-md">
-          <div className="doctor-info">
-            <img src="../img/doctor.jpg" alt="" />
+      {
+        doctors?.map(item => {
+          return (
+            <>
 
-            <div>
-              <p className="mt-3 ">অভিজ্ঞতা: ১৫+ বছর</p>
-            </div>
-          </div>
+              <div className="m-2 mb-2 doctor-profile">
+                <div className="w-100% border  flex  gap-4 rounded-sm shadow-lg p-4 bg-white">
+                  <div className="doctor-info">
+                    <img src={`http://127.0.0.1:8000/admin/doctors/${item.doctor_img}`} alt="" />
 
-          <NavLink to='/details-one-doctors' className="doctor-name">
-            <h2>অধ্যাপক ডাঃ বি.ডি. বিধু</h2>
-            <p>এমবিবিএস, এমডি (মেডিসিন), এফএসিপি, মেডিসিন (আমেরিকা)</p>
-            <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-              <p>মেডিসিন </p>
-            </div>
-            <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
-            <div className="mt-3 text-[12px]">
-            <a
-                href="#"
-                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-              >
-                বিস্তারিত
-                <svg
-                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.1"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </NavLink>
-        </div>
-      </div>
+                    <div>
+                      <p className="mt-2 text-center ">অভিজ্ঞতা: {item.experience} বছর</p>
+                    </div>
+                  </div>
 
+                  <div className="doctor-name">
+                    <h2>{item.name}</h2>
+                    <p>{item.degree}</p>
+                    <p className="font-bold">{item.hospital}</p>
+                    <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                      <p>{item.specialized}</p>
+                    </div>
+                    <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
+                    <div className="mt-3 text-[12px]">
+                      <a
+                        href="#"
+                        className="inline-flex items-center float-end mt-5 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
+                      >
+                        বিস্তারিত
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="15px"
+                          viewBox="0 -960 960 960"
+                          width="20px"
+                          fill="#0e9f6e"
+                          className="float-right"
+                        >
+                          <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )
+        })
+      }
       {/* Favourite Doctors */}
-      <div className="popular-doctors">
-        <h2 className="ml-2 text-green-500">প্রিয় ডাক্তাররা</h2>
-      </div>
+      <NavLink to='/doctor-details' className="popular-doctors">
+        <h2 className="mt-3 ml-2 text-green-500 "> প্রিয় ডাক্তাররা</h2>
+        <div className="flex items-center justify-between m-2 mt-3">
+          <h2 className="mx-1 text-[13px] text-green-500">আরো দেখুন</h2>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#0e9f6e"
+            className="float-right"
+          >
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+          </svg>
+        </div>
+      </NavLink>
       {/* Doctor Card */}
       <Link to="/doctor-details" className="doctor-profile">
         <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
