@@ -57,28 +57,32 @@ const ExpertDoctors = () => {
           return (
             <>
 
-              <div className="m-2 mb-3 doctor-profile">
-                <div className="w-100% border  flex  gap-4 rounded-md shadow-lg p-3 bg-white">
+              <div className="m-2 mb-2 doctor-profile">
+                <div className="w-100% border  flex  gap-4 rounded-sm shadow-lg p-4 bg-white">
                   <div className="doctor-info">
                     <img src={`http://127.0.0.1:8000/admin/doctors/${item.doctor_img}`} alt="" />
 
                     <div>
                       <p className="mt-2 text-center ">অভিজ্ঞতা: {item.experience} বছর</p>
+                      <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
                     </div>
                   </div>
 
                   <div className="doctor-name">
                     <h2>{item.name}</h2>
-                    <p>{item.degree}</p>
-                    <p className="font-bold">{item.hospital}</p>
-                    <div className="w-fit px-4 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                    <div className="w-20 h-auto mt-1 mb-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
                       <p>{item.specialized}</p>
                     </div>
-                    <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
-                    <div className="mt-3 text-[12px]">
+                    <p >{item.degree}</p>
+                    <p>{item.e_degree}</p>
+                    <p className="font-bold">{item.hospital}</p>
+                    <p><span className="font-bold">চেম্বার: </span> {item.address}</p>
+                    
+                    
+                    <div className="text-[12px]">
                       <a
                         href="#"
-                        className="inline-flex items-center float-start mt-1 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
+                        className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
                         বিস্তারিত
                         <svg
@@ -87,7 +91,7 @@ const ExpertDoctors = () => {
                           viewBox="0 -960 960 960"
                           width="20px"
                           fill="#0e9f6e"
-                          className=""
+                          className="float-right"
                         >
                           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>

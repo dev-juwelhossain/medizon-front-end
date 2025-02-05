@@ -87,21 +87,25 @@ const Doctors = () => {
 
                     <div>
                       <p className="mt-2 text-center ">অভিজ্ঞতা: {item.experience} বছর</p>
+                      <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
                     </div>
                   </div>
 
                   <div className="doctor-name">
                     <h2>{item.name}</h2>
-                    <p>{item.degree}</p>
-                    <p className="font-bold">{item.hospital}</p>
-                    <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                    <div className="w-20 h-auto mt-1 mb-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
                       <p>{item.specialized}</p>
                     </div>
-                    <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
-                    <div className="mt-3 text-[12px]">
+                    <p >{item.degree}</p>
+                    <p>{item.e_degree}</p>
+                    <p className="font-bold">{item.hospital}</p>
+                    <p><span className="font-bold">চেম্বার: </span> {item.address}</p>
+                    
+                    
+                    <div className="text-[12px]">
                       <a
                         href="#"
-                        className="inline-flex items-center float-end mt-5 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
+                        className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
                         বিস্তারিত
                         <svg
