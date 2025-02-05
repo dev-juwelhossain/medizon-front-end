@@ -70,7 +70,7 @@ const ExpertDoctors = () => {
 
                   <div className="doctor-name">
                     <h2>{item.name}</h2>
-                    <div className="w-20 h-auto mt-1 mb-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                    <div className="w-fit h-auto px-2 mt-1 mb-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
                       <p>{item.specialized}</p>
                     </div>
                     <p >{item.degree}</p>
