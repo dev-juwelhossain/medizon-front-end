@@ -2,12 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
 
-const DetailsOneDoctors = () => {
+const DetailsOneDoctors = (id) => {
   const [doctor, setDoctor] =useState()
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
   useEffect(() => {
     // Make a request for a user with a given ID
-    axios.get(`${BASE_URL}/doctors`)
+    axios.get(`${BASE_URL}/doctors/${id}`)
       .then(function (response) {
         // handle success
         setDoctor(response.data);
@@ -16,7 +16,7 @@ const DetailsOneDoctors = () => {
         // handle error
         console.log(error);
       })
-  }, [])
+  }, [id])
   
   return (
     <div className="max-w-md m-2 mx-auto mb-2 ">

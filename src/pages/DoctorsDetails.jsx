@@ -59,7 +59,7 @@ const DoctorsDetails = () => {
           return (
             <>
 
-              <div className="m-2 mb-2 doctor-profile">
+              <div className="m-2 mb-2 doctor-profile"key={item.id}>
                 <div className="w-100% border  flex  gap-4 rounded-sm shadow-lg p-4 bg-white">
                   <div className="doctor-info">
                     <img src={`http://127.0.0.1:8000/admin/doctors/${item.doctor_img}`} alt="" />
@@ -82,8 +82,8 @@ const DoctorsDetails = () => {
                     
                     
                     <div className="text-[12px]">
-                      <a
-                        href="#"
+                      <NavLink
+                        to={`/details-one-doctors/${id}`}
                         className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
                         বিস্তারিত
@@ -97,7 +97,7 @@ const DoctorsDetails = () => {
                         >
                           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
