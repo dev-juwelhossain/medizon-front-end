@@ -1,57 +1,50 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router";
+import { NavLink, useParams } from "react-router"; // Fixed import
 
-const DetailsOneDoctors = (id) => {
-  const [doctor, setDoctor] =useState()
+const DetailsOneDoctors = () => {
+  const { id } = useParams(); // Fixed useParams usage
+  const [doctor, setDoctor] = useState({}); // Initialize as an object
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   useEffect(() => {
-    // Make a request for a user with a given ID
     axios.get(`${BASE_URL}/doctors/${id}`)
       .then(function (response) {
-        // handle success
         setDoctor(response.data);
       })
       .catch(function (error) {
-        // handle error
         console.log(error);
-      })
-  }, [id])
-  
-  return (
-    <div className="max-w-md m-2 mx-auto mb-2 ">
-      {/* BAck Button */}
+      });
+  }, [id]);
 
+  return (
+    <div className="max-w-md m-2 mx-auto mb-2">
+      {/* Back Button */}
       <div className="flex">
-        <NavLink to="/doctors" className="flex m-2">
-          <a href="#">
-            <svg
-              className="w-6 h-6 text-green-500 dark:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m15 19-7-7 7-7"
-              />
-            </svg>
-          </a>
-          <h2 className="font-semibold text-green-500">ডাক্তারের তথ্য </h2>
+        <NavLink to="/expert-doctors" className="flex m-2">
+          <svg
+            className="w-6 h-6 text-green-500 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m15 19-7-7 7-7"
+            />
+          </svg>
+          <h2 className="font-semibold text-green-500">ডাক্তারের তথ্য</h2>
         </NavLink>
 
-        {/*####Share & Favourite Icon ####*/}
-
+        {/* Share & Favourite Icon */}
         <div className="flex m-2 ml-auto space-x-2">
           <a href="#">
-            {/* Favourite Icon */}
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -63,10 +56,7 @@ const DetailsOneDoctors = (id) => {
             </svg>
           </a>
 
-          {/* Share SVG icon */}
           <a href="#">
-            {/* Share SVG */}
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -79,95 +69,91 @@ const DetailsOneDoctors = (id) => {
           </a>
         </div>
       </div>
-      {/* maping */}
-    { doctor?.map(item =>{
-      return <>
-      
-      
-     
 
-      {/* Doctors Image */}
-      <div className="flex">
-        <div className=" m-2 overflow-hidden rounded-[8px] doctor-info">
-          <img src={`http://127.0.0.1:8000/admin/doctors${item.doctor_img}`} alt="" />
-          <p>অভিজ্ঞতা: {item.experience}</p>
-        </div>
+      {/* Doctor Details */}
+      {doctor && (
+        <>
+          {/* Doctors Image */}
+          <div className="flex">
+            <div className="m-2 overflow-hidden rounded-[8px] doctor-info">
+              <img src={`http://127.0.0.1:8000/admin/doctors/${doctor.doctor_img}`} alt={doctor.name} />
+              <p>অভিজ্ঞতা: {doctor.experience}</p>
+            </div>
 
-        {/* Doctors Name Deatils */}
-        <div className="mt-3 ml-1">
-          <h2 className="text-xl font-semibold"> {item.name} </h2>
-          <p className="text-sm text-gray-500"> {item.specialized} </p>
-          <div className="h-auto mt-1 font-medium text-center text-white bg-blue-700 rounded-sm w-15 doctor-button ">
-            <p>{item.specialized}</p>
+            {/* Doctors Name Details */}
+            <div className="mt-3 ml-1">
+              <h2 className="text-xl font-semibold">{doctor.name}</h2>
+              <p className="text-sm text-gray-500">{doctor.degree}</p>
+              <div className="h-auto mt-1 font-medium text-center text-white bg-blue-700 rounded-sm w-15 doctor-button">
+                <p>{doctor.specialized}</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* Doctor's Information */}
-      <div className="ml-3">
-        <p className="text-sm text-gray-500 ">কর্মস্থল</p>
-        <p>{item.hospital}</p>
-      </div>
+          {/* Doctor's Information */}
+          <div className="ml-3">
+            <p className="text-slate-400">পদ :</p>
+            <p> {doctor.e_degree}</p>
+            <p className="text-sm text-gray-500">কর্মস্থল</p>
+            <p>{doctor.hospital}</p>
+          </div>
 
-      {/* Doctor's Information */}
-      <div className="mt-10 ">
-        <h4 className="px-3 mx-3 ml-3 font-semibold text-center text-green-500 rounded-lg shadow-md bg-gray-50">
-          তথ্য ও অভিজ্ঞতা
-        </h4>
-      </div>
+          {/* Doctor's Information */}
+          <div className="mt-10">
+            <h4 className="px-3 mx-3 ml-3 font-semibold text-center text-green-500 rounded-lg shadow-md bg-gray-50">
+              তথ্য ও অভিজ্ঞতা
+            </h4>
+          </div>
 
-      {/* informaton*/}
-      <br />
-      <br />
+          {/* Appointment Time */}
+          <div className="inline-flex mt-5 px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
+            <svg
+              className="text-green-500 h-7 w-7 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+              />
+            </svg>
+            <h4 className="px-2 text-black">এপয়েন্টমেন্ট এর সময় :</h4>
+          </div>
+          <div className="ml-3">
+            <ul
+              role="list"
+              className="pl-5 space-y-3 list-disc marker:text-green-400 text-slate-500"
+            >
+              <li>{doctor.appointment_time}</li>
+              <li>স্থান : {doctor.address}</li>
+            </ul>
+          </div>
 
-      <div className="inline-flex px-2 py-1 mb-4 text-lg font-semibold text-green-500 dark:text-white">
-        <svg
-          className="text-green-500 h-7 w-7 dark:text-white"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
-          />
-        </svg>
-        <h4 className="px-2 text-black">এপয়েন্টমেন্ট এর সময় :</h4>
-      </div>
-      <div className="ml-3">
-        <ul
-          role="list"
-          className="pl-5 space-y-3 list-disc marker:text-green-400 text-slate-500"
-        >
-          <li>{item.appointment_time}</li>
-         
-          <li>
-            স্থান : {item.address}
-          </li>
-        </ul>
-      </div>
-      <div className="inline-flex mt-3 ml-4 font-semibold">
-        <svg className="mr-2"
-          version="1.0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20px"
-          height="20px"
-          viewBox="0 0 512.000000 512.000000"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g
-            transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
-          >
-            <path
-              d="M1395 4576 c-110 -27 -212 -103 -268 -199 -40 -67 -42 -90 -16 -155
+          {/* Consultation Fee */}
+          <div className="inline-flex mt-3 ml-4 font-semibold">
+            <svg
+              className="mr-2"
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 0 512.000000 512.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="#000000"
+                stroke="none"
+              >
+                <path
+                  d="M1395 4576 c-110 -27 -212 -103 -268 -199 -40 -67 -42 -90 -16 -155
 25 -64 84 -185 106 -219 14 -22 16 -22 41 -5 20 13 48 17 122 17 89 0 99 -2
 158 -34 35 -19 81 -55 103 -79 67 -77 69 -92 69 -564 l0 -418 -399 -2 -399 -3
 196 -203 197 -203 203 1 202 0 0 -711 c0 -786 -1 -768 65 -898 91 -178 251
@@ -179,114 +165,54 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
 -28 -99 -33 -197 -37 -129 -5 -201 7 -274 46 -65 35 -130 109 -159 180 l-23
 57 -3 612 -3 613 320 2 320 3 -195 202 -195 202 -122 3 -122 3 -5 555 -6 555
 -27 99 c-69 255 -191 396 -378 441 -77 18 -253 18 -324 1z"
-            />
-          </g>
-        </svg>
-        <p>পরামর্শ ফি- {item.consultation_fee}/-</p>
-      </div>
-      {/* contact info */}
-      <div>
-        <h3 className="ml-3 mb-2 font-semibold text-[20px]">যোগাযোগ করুন</h3>
-        <div className="flex items-center mb-2 ml-3 space-x-1">
-          <svg
-            className="w-[24px] h-[24px] text-gray-800 dark:text-white  border border-black rounded-xl"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1"
-              d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
-            />
-          </svg>
-          <p>{item.contact}</p>
-        </div>
-        <div className="flex items-center ml-3 space-x-1">
-          <svg
-            className="w-[24px] h-[24px] text-black border border-black rounded-xl dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1"
-              d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
-            />
-          </svg>
+                />
+              </g>
+            </svg>
+            <p>পরামর্শ ফি- {doctor.consultation_fee}/-</p>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="ml-3 mb-2 font-semibold text-[18px]">যোগাযোগ করুন</h3>
+            <div className="flex items-center mb-2 ml-3 space-x-1">
+              <svg
+                className="w-[24px] h-[24px] text-gray-800 dark:text-white border border-black rounded-xl"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1"
+                  d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
+                />
+              </svg>
+              <p>{doctor.contact}</p>
+            </div>
+          </div>
+
+          {/* About Doctor */}
+          <div>
+            <h2 className="ml-2 mb-1 mt-2 text-[20px] font-bold">ডাক্তার সম্পর্কে :</h2>
+            <p className="p-2 ml-1 mr-1 border border-gray-400 rounded-lg shadow-lg text-start">
+              {doctor.about_doctor}
+            </p>
+          </div>
+
+         
           
-        </div>
-        <br />
-        <div>
-          <h2 className="ml-2 mb-1 text-[20px] font-bold ">
-            ডাক্তার সম্পর্কে :
-          </h2>
-
-          <p className="p-2 ml-1 mr-1 border border-gray-400 rounded-lg shadow-lg text-start">
-           {item.abount_doctor}
-          </p>
-        </div>
-        <br />
-
-        {/* experiences */}
-        <h1 className="ml-3 mb-2 font-semibold text-[20px]">অভিজ্ঞতা :</h1>
-        {/* exp card start here */}
-
-        <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
-          <h1 className="pt-1 mt-1 ml-2 ">{item.e_hospital}</h1>
-          <div className="flex justify-between px-3 py-2">
-            <div>
-              <p className="text-[12px] text-slate-500">পদবী</p>
-              <p>{item.e_degree}</p>
-            </div>
-            <div>
-              <p className="text-[12px] text-slate-500">অভিজ্ঞতার সময়কাল</p>
-              <p>{item.e_experience_year}</p>
-            </div>
-          </div>
-        </div>
-
-        {/* exp card -2 */}
-
-        <div className="m-3 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
-          <h1 className="pt-1 mt-1 ml-2 ">রংপুর মেডিকেল কলেজ হাসপাতাল</h1>
-          <div className="flex justify-between px-3 py-2">
-            <div>
-              <p className="text-[12px] text-slate-500">পদবী</p>
-              <p>এফসিপিএস (মেডিসিন)</p>
-            </div>
-            <div>
-              <p className="text-[12px] text-slate-500">অভিজ্ঞতার সময়কাল</p>
-              <p>আট বছর</p>
-            </div>
-          </div>
-        </div>
-        {/* exp card -3 */}
-
-        
-      
-        {/* exp card -4 */}
-        
-      </div>
+        </>
+      )}
       <br />
       <br />
       <br />
-      </>
-     })
-     }
+      <br />
     </div>
-    
   );
 };
 

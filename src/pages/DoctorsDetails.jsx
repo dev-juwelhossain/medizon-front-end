@@ -1,9 +1,9 @@
 
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const DoctorsDetails = () => {
+const DoctorsDetails = (id) => {
   const [doctors, setDoctors] = useState()
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
@@ -18,7 +18,11 @@ const DoctorsDetails = () => {
         // handle error
         console.log(error);
       })
-  }, [])
+  }, [id])
+  const navigate = useNavigate();
+  const expertDoctor = (id) => {
+    navigate (`/details-one-doctors/${id}`)
+  }
   console.log(doctors);
 
 
@@ -83,7 +87,7 @@ const DoctorsDetails = () => {
                     
                     <div className="text-[12px]">
                       <NavLink
-                        to={`/details-one-doctors/${id}`}
+                        to={`/details-one-doctors/${item.id}`}
                         className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
                         বিস্তারিত

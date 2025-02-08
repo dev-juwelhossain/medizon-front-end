@@ -36,7 +36,7 @@ const SingleSlide = ({Id}) => {
         <div className="w-full border flex gap-4 rounded-sm shadow-lg p-4 bg-white">
           <div className="doctor-info">
             <img
-              src={`${BASE_URL}/admin/doctors/${doctor.doctor_img}`}
+              src={`http://127.0.0.1:8000/admin/doctors/${doctor.doctor_img}`}
               alt={doctor.name}
               className="w-32 h-32 object-cover rounded-full"
               

@@ -146,52 +146,58 @@ const Doctors = () => {
         </div>
       </NavLink>
       {/* Doctor Card */}
-      <Link to="/doctor-details" className="doctor-profile">
-        <div className="w-100% border  flex  gap-4 rounded-lg shadow-lg p-4 bg-white">
-          <div className="doctor-info">
-            <img src="../img/doctor.jpg" alt="" />
+      {
+        doctors?.map(item => {
+          return (
+            <>
 
-            <div>
-              <p className="mt-2 ">অভিজ্ঞতা: ১৫+ বছর</p>
-            </div>
-          </div>
+              <div className="m-2 mb-2 doctor-profile">
+                <div className="w-100% border  flex  gap-4 rounded-sm shadow-lg p-4 bg-white">
+                  <div className="doctor-info">
+                    <img src={`http://127.0.0.1:8000/admin/doctors/${item.doctor_img}`} alt="" />
 
-          <div className="doctor-name">
-            <h2>ডাঃ মােঃ আব্দুল মােমেন</h2>
-            <p>এমবিবিএস, এমএস (অর্থোপেডিক সার্জারি)</p>
-            <div className="w-20 h-auto mt-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
-              <p>হাড়ের অস্ত্রোপচার</p>
-            </div>
-            <p className="text-[15px] mt-1">রংপুর মেডিকেল কলেজ ও হাসপাতাল</p>
-            <div className="mt-3 text-[12px]">
-            <a
-                href="#"
-                className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
-              >
-                বিস্তারিত
-                <svg
-                  className="w-4 h-5 pb-[2px] text-green-500 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.1"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </Link>
+                    <div>
+                      <p className="mt-2 text-center ">অভিজ্ঞতা: {item.experience} বছর</p>
+                      <p className="text-[15px] mt-1">কনসালটেশন ফি: {item.consultation_fee} ৳</p>
+                    </div>
+                  </div>
 
+                  <div className="doctor-name">
+                    <h2>{item.name}</h2>
+                    <div className="w-20 h-auto mt-1 mb-1 text-center text-white bg-green-500 rounded-sm doctor-button ">
+                      <p>{item.specialized}</p>
+                    </div>
+                    <p >{item.degree}</p>
+                    <p>{item.e_degree}</p>
+                    <p className="font-bold">{item.hospital}</p>
+                    <p><span className="font-bold">চেম্বার: </span> {item.address}</p>
+                    
+                    
+                    <div className="text-[12px]">
+                      <a
+                        href="#"
+                        className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
+                      >
+                        বিস্তারিত
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="15px"
+                          viewBox="0 -960 960 960"
+                          width="20px"
+                          fill="#0e9f6e"
+                          className="float-right"
+                        >
+                          <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )
+        })
+      }
       {/* Department of Doctors */}
       <div id="popular-doctors" className="popular-doctors">
         <h2 className="mt-6">বিভাগ অনুযায়ী ডাক্তার</h2>

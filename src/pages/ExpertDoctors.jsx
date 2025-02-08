@@ -1,9 +1,9 @@
 
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const ExpertDoctors = () => {
+const ExpertDoctors = (id) => {
   const [doctors, setDoctors] = useState()
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
@@ -18,7 +18,11 @@ const ExpertDoctors = () => {
         // handle error
         console.log(error);
       })
-  }, [])
+  }, [id])
+  const navigate = useNavigate();
+  const expertDoctor = (id) => {
+    navigate (`/details-one-doctors/${id}`)
+  }
   console.log(doctors);
   return (
     <div className="max-w-md mb-[70px] m-3 mx-auto">
@@ -56,8 +60,8 @@ const ExpertDoctors = () => {
         doctors?.map(item => {
           return (
             <>
-
-              <div className="m-2 mb-2 doctor-profile">
+            
+              <div key={item.id} className="m-2 mb-2 doctor-profile" >
                 <div className="w-100% border  flex  gap-4 rounded-sm shadow-lg p-4 bg-white">
                   <div className="doctor-info">
                     <img src={`http://127.0.0.1:8000/admin/doctors/${item.doctor_img}`} alt="" />
@@ -80,7 +84,7 @@ const ExpertDoctors = () => {
                     
                     
                     <div className="text-[12px]">
-                      <a
+                      <NavLink to={`/details-one-doctors/${item.id}`}
                         href="#"
                         className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
@@ -95,7 +99,7 @@ const ExpertDoctors = () => {
                         >
                           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
