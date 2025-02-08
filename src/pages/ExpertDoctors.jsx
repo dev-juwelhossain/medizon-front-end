@@ -85,7 +85,7 @@ const ExpertDoctors = (id) => {
                     
                     <div className="text-[12px]">
                       <NavLink to={`/details-one-doctors/${item.id}`}
-                        href="#"
+                      
                         className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
                         বিস্তারিত
