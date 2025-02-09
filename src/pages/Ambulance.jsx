@@ -69,7 +69,7 @@ const Ambulance = () => {
                         <p className="text-[12px] m-1">{item.location}</p>
                       </a>
                       <a
-                        href="#"
+                        href={`tel:${item.phone_number}`}
                         className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
                       >
                         যোগাযোগ করুন
