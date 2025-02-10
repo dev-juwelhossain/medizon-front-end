@@ -94,7 +94,9 @@ const DetailsOneDoctors = () => {
           <div className="ml-3">
             <p className="text-slate-400">পদ :</p>
             <p> {doctor.e_degree}</p>
-            <p className="text-sm text-gray-500">কর্মস্থল</p>
+            <p className="text-sm text-gray-500">কর্মস্থলঃ</p>
+            <p>{doctor.e_hospital} ,</p>
+            
             <p>{doctor.hospital}</p>
           </div>
 
@@ -132,7 +134,7 @@ const DetailsOneDoctors = () => {
               className="pl-5 space-y-3 list-disc marker:text-green-400 text-slate-500"
             >
               <li>{doctor.appointment_time}</li>
-              <li>স্থান : {doctor.address}</li>
+              <li>চেম্বার : {doctor.address}</li>
             </ul>
           </div>
 
@@ -174,9 +176,9 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
           {/* Contact Info */}
           <div>
             <h3 className="ml-3 mb-2 font-semibold text-[18px]">যোগাযোগ করুন</h3>
-            <div className="flex items-center mb-2 ml-3 space-x-1">
+            <a href={`tel:${doctor.contact}`} className="flex items-center mb-2 ml-3 space-x-2">
               <svg
-                className="w-[24px] h-[24px] text-gray-800 dark:text-white border border-black rounded-xl"
+                className="w-[24px] h-[24px] text-green-500 dark:text-white border border-green-500 rounded-xl"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -193,14 +195,14 @@ l92 3 -6 -45 c-16 -123 -62 -255 -124 -360 -143 -244 -419 -493 -642 -581 -71
                 />
               </svg>
               <p>{doctor.contact}</p>
-            </div>
+            </a>
           </div>
 
           {/* About Doctor */}
           <div>
             <h2 className="ml-2 mb-1 mt-2 text-[20px] font-bold">ডাক্তার সম্পর্কে :</h2>
             <p className="p-2 ml-1 mr-1 border border-gray-400 rounded-lg shadow-lg text-start">
-              {doctor.about_doctor}
+              {doctor.abount_doctor}
             </p>
           </div>
 

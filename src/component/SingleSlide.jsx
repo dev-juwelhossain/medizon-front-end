@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
 
 const SingleSlide = ({Id}) => {
   const [doctor, setDoctor] = useState();
@@ -57,9 +58,9 @@ const SingleSlide = ({Id}) => {
             <p className="font-bold">{doctor.hospital}</p>
             <p><span className="font-bold">চেম্বার:</span> {doctor.address}</p>
 
-            <div className="text-[12px]">
-              <a
-                href="#"
+            <NavLink to={`/details-one-doctors/${doctor .id}`} className="text-[12px]">
+              <div
+                
                 className="inline-flex items-center mt-3 px-[5px] py-[3px] text-black bg-slate-50 rounded-md text-[10px] hover:shadow-lg"
               >
                 বিস্তারিত
@@ -73,8 +74,8 @@ const SingleSlide = ({Id}) => {
                 >
                   <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                 </svg>
-              </a>
-            </div>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>

@@ -17,8 +17,6 @@ import Ambulance from "./pages/Ambulance.jsx";
 import DetailsOneHospitals from "./pages/DetailsOneHospitals.jsx";
 import Settings from "./pages/Settings.jsx";
 import ExpertDoctors from "./pages/ExpertDoctors.jsx";
-import Labaid from "./pages/Labaid.jsx";
-import Popular from "./pages/Popular.jsx";
 import SubSettings from "./pages/SubSettings.jsx";
 import Help from "./pages/Help.jsx";
 import FeedBack from "./pages/FeedBack.jsx";
@@ -65,14 +63,6 @@ const router = createBrowserRouter([
       {
         path: "/expert-doctors",
         element: <ExpertDoctors />,
-      },
-      {
-        path: "/labaid",
-        element: <Labaid />,
-      },
-      {
-        path: "/popular",
-        element: <Popular />,
       },
       {
         path: "/sub-settings",

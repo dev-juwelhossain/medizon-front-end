@@ -122,8 +122,8 @@ const Home = () => {
                         <p className="text-[13px] m-1 "> {item.phone_number}</p>
                         <p className="text-[13px] m-1">{item.location}</p>
                       </div>
-                      <NavLink to='/details-one-hospitals'
-                        href="#"
+                      <NavLink to={`/details-one-hospitals/${item.id}`}
+                       
                         className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
                       >
                         বিস্তারিত
@@ -199,13 +199,13 @@ const Home = () => {
                       />
                     </a>
                     <div className="px-2 py-2">
-                      <a href="#">
+                      <div>
                         <h2 className="text-[14px] font-bold">{item.name}</h2>
                         <p className="text-[12px] m-1 ">{item.phone_number} </p>
                         <p className="text-[12px] m-1">{item.location}</p>
-                      </a>
+                      </div>
                       <a
-                        href="#"
+                        href={`tel:${item.phone_number}`}
                         className="inline-flex items-center px-2  mt-2 font-normal text-center text-black  bg-white rounded-md text-[13px] hover:shadow-md"
                       >
                         যোগাযোগ করুন

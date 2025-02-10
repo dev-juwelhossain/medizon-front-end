@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
 import "./css/Secondary.css";
 import DoctorSlider from "../component/DoctorSlider";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -29,7 +29,7 @@ const Doctors = () => {
      
       {/* back button */}
       <NavLink to='/' className="inline-flex items-center px-1 py-1 mb-3 text-lg font-semibold text-green-500 dark:text-white">
-        <a href="">
+        <div>
           <svg
             className=" text-green-500 dark:text-white"
             aria-hidden="true"
@@ -48,7 +48,7 @@ const Doctors = () => {
             />
           </svg>
           
-        </a>
+        </div>
         <h3 className="">ডাক্তার তালিকা</h3>
       </NavLink>
       
@@ -102,8 +102,8 @@ const Doctors = () => {
                     <p><span className="font-bold">চেম্বার: </span> {item.address}</p>
                     
                     
-                    <div className="text-[12px]">
-                      <a
+                    <NavLink to={`/details-one-doctors/${item.id}`} className="text-[12px]">
+                      <div
                         href="#"
                         className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
@@ -118,8 +118,8 @@ const Doctors = () => {
                         >
                           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>
-                      </a>
-                    </div>
+                      </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -173,9 +173,8 @@ const Doctors = () => {
                     <p><span className="font-bold">চেম্বার: </span> {item.address}</p>
                     
                     
-                    <div className="text-[12px]">
-                      <a
-                        href="#"
+                    <NavLink to={`/details-one-doctors/${item.id}`} className="text-[12px]">
+                      <div
                         className="inline-flex items-center float-start mt-3 px-[5px] py-[3px] font-normal text-center text-black  bg-slate-50  rounded-md text-[10px] hover:shadow-lg"
                       >
                         বিস্তারিত
@@ -189,8 +188,8 @@ const Doctors = () => {
                         >
                           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>
-                      </a>
-                    </div>
+                      </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>

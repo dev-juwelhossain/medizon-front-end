@@ -19,10 +19,10 @@ const ExpertDoctors = (id) => {
         console.log(error);
       })
   }, [id])
-  const navigate = useNavigate();
-  const expertDoctor = (id) => {
-    navigate (`/details-one-doctors/${id}`)
-  }
+  // const navigate = useNavigate();
+  // const expertDoctor = (id) => {
+  //   navigate (`/details-one-doctors/${id}`)
+  // }
   console.log(doctors);
   return (
     <div className="max-w-md mb-[70px] m-3 mx-auto">
